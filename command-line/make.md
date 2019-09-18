@@ -140,7 +140,7 @@ help : makefile
 
 And in terminal we could run `make help`:
 
-```bash
+```text
 $ make help
  clean       : Remove auto-generated files.
 ```
