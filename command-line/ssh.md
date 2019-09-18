@@ -1,6 +1,6 @@
 # SSH
 
-### .ssh/config
+## config file: .ssh/config
 
 With the following in the config file, `ssh orion` will connect to the server:
 
@@ -11,7 +11,7 @@ Host orion
     IdentityFile ~/.ssh/id_rsa
 ```
 
-### SCP
+## SCP
 
 ```bash
 # Send local file to user home folder in server. Note the colon at the end.
@@ -22,7 +22,7 @@ scp localfile.txt scott@orion.dev:/var/tmp
 scp scott@orion.dev:filename.txt .
 ```
 
-### SSH Tunnel
+## SSH Tunnel
 
 Example: a remote database server \(`orion.dev:3306`\) only allows local access. On local machine we have a GUI tool, which can't connect to the remote database directly.
 
