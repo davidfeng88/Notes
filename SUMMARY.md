@@ -10,8 +10,8 @@
 
 ## Web
 
-* [Hugo](web/hugo.md)
 * [Chrome Dev Tools](web/chrome-dev-tools.md)
+* [Hugo](web/hugo.md)
 * [REST APIs](web/rest-apis.md)
 
 ## Soft Skills
