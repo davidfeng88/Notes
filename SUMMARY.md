@@ -8,6 +8,12 @@
 * [Make](command-line/make.md)
 * [SSH](command-line/ssh.md)
 
+## Web
+
+* [Hugo](web/hugo.md)
+* [Chrome Dev Tools](web/chrome-dev-tools.md)
+* [REST APIs](web/rest-apis.md)
+
 ## Soft Skills
 
 * [Listening Skills](soft-skills/listening-skills.md)
