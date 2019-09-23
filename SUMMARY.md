@@ -5,6 +5,7 @@
 ## Command Line
 
 * [AWK](command-line/awk.md)
+* [Bash Script](command-line/bash-script.md)
 * [Make](command-line/make.md)
 * [SSH](command-line/ssh.md)
 
