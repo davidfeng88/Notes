@@ -19,6 +19,10 @@
 * [Hugo](web/hugo.md)
 * [REST APIs](web/rest-apis.md)
 
+## Tools
+
+* [Containers](tools/containers.md)
+
 ## Soft Skills
 
 * [Listening Skills](soft-skills/listening-skills.md)
