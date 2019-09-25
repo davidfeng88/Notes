@@ -9,6 +9,10 @@
 * [Make](command-line/make.md)
 * [SSH](command-line/ssh.md)
 
+## JavaScript
+
+* [Numbers](javascript/numbers.md)
+
 ## Web
 
 * [Chrome Dev Tools](web/chrome-dev-tools.md)
