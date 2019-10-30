@@ -28,6 +28,10 @@
 * [Listening Skills](soft-skills/listening-skills.md)
 * [Public Speaking](soft-skills/public-speaking.md)
 
+## Career
+
+* [沈公子 - 人家的屋顶](career/shen-gong-zi-ren-jia-de-wu-ding.md)
+
 ## Misc
 
 * [Don't Make Me Think](misc/dont-make-me-think.md)
