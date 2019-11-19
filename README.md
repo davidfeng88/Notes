@@ -66,7 +66,9 @@ Several topics are ubiquitous \(i.e. they are important\): Unix Shell \(Bash\), 
 
 Nowadays we simply have too much information. One way to handle that is "lazy load" the material: learn it when you need it. Below is the some resources I collected over time, waiting to be lazy loaded 😀
 
-### Go
+### Languages
+
+#### Go
 
 * [From python to Golang \(Moat Internal\)](https://confluence.moat.com/pages/viewpage.action?pageId=86557751)
 * [https://learn.go.dev/](https://learn.go.dev/)
@@ -75,18 +77,23 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 * [Advanced Go Programming Book \(Chinese\)](https://github.com/chai2010/advanced-go-programming-book)
 * [Golang \(cool shell\)](https://coolshell.cn/articles/8460.html)
 
-### Databases
+#### Python
 
-* [Comparing Database Types](https://www.prisma.io/blog/comparison-of-database-models-1iz9u29nwn37)
+* Style [https://www.youtube.com/watch?v=wf-BqAjZb8M](https://www.youtube.com/watch?v=wf-BqAjZb8M)
+
+#### JavaScript
+
+* [Side effects of pure JS functions](https://jrsinclair.com/articles/2018/how-to-deal-with-dirty-side-effects-in-your-pure-functional-javascript/)
+
+#### New Languages
+
+* [Clojure for the brave and true](https://www.braveclojure.com/clojure-for-the-brave-and-true/)
+* [Learn ClojureScript](https://www.learn-clojurescript.com/)
 
 ### Web Performance
 
 * [Web Performance 101](https://3perf.com/talks/web-perf-101/)
-
-### New Languages
-
-* [Clojure for the brave and true](https://www.braveclojure.com/clojure-for-the-brave-and-true/)
-* [Learn ClojureScript](https://www.learn-clojurescript.com/)
+* [Speed tooling evolutions: 2019 and beyond \(Chrome Dev Summit 2019\)](https://www.youtube.com/watch?v=iaWLXf1FgI0&feature=youtu.be&t=531)
 
 ### Unix
 
@@ -120,8 +127,17 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 * [A thorough intro to distributed systems](https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/)
 * [The system design primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
 * [Web architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)
+* [Different ways of caching and maintaining cache consistency](https://blog.the-pans.com/different-ways-of-caching-in-distributed-system/)
+* [缓存与数据库一致性保证](https://yq.aliyun.com/articles/175196)
 
-### Python
+### Misc
 
-* Style [https://www.youtube.com/watch?v=wf-BqAjZb8M](https://www.youtube.com/watch?v=wf-BqAjZb8M)
+* [Comparing Database Types](https://www.prisma.io/blog/comparison-of-database-models-1iz9u29nwn37)
+* [git flow](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow)
+* [自然语言处理](https://easyai.tech/blog/59pdf-nlp-all-in-one/)
+
+### CS Books
+
+* [list 1](https://www.coderscat.com/best-cs-books)
+* [list 2](https://blog.pragmaticengineer.com/my-reading-list/)
 
