@@ -115,6 +115,9 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 * [awesome command line tools](https://www.vimfromscratch.com/articles/awesome-command-line-tools/)
 * [AWK \(cool shell\)](https://coolshell.cn/articles/9070.html)
 * [SED \(cool shell\)](https://coolshell.cn/articles/9104.html)
+* This PDF
+
+{% file src=".gitbook/assets/docshare.tips\_cli-git-emacs-dotfiles.pdf" caption="Command Line PDF Ref" %}
 
 ### Ad Tech
 
