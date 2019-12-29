@@ -31,6 +31,7 @@
 ## Career
 
 * [沈公子 - 人家的屋顶](career/shen-gong-zi-ren-jia-de-wu-ding.md)
+* [Rands](career/rands.md)
 
 ## Misc
 
