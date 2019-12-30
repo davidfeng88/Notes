@@ -8,6 +8,8 @@
 * [Bash Script](command-line/bash-script.md)
 * [Make](command-line/make.md)
 * [SSH](command-line/ssh.md)
+* [Create Temp Files](command-line/create-temp-files.md)
+* [Tools](command-line/tools.md)
 
 ## JavaScript
 
