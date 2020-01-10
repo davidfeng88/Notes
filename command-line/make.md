@@ -108,6 +108,21 @@ main: main.o moreCode.o
 
 We could also separate configuration from computation: use `include config.mk` at the top of the main makefile and put all configuration \(LANGUAGE, SRC\_FILE\_NAME, etc\) in `config.mk`.
 
+Variables can be overridden on command line. e.g.
+
+```bash
+#Makefile
+TEXT = default
+target1:
+	@ echo $(TEXT)
+
+$ make
+default
+
+$ make TEXT=abc
+abc
+```
+
 ### Functions
 
 Use `wildcard` function to get lists of files matching a pattern. Use `patsubst` function to rewrite file names.
