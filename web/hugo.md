@@ -1,5 +1,13 @@
 # Hugo
 
+## Quick Reference
+
+| Task | Command |
+| :--- | :--- |
+| Create a new single page | `hugo new posts/a/index.md` |
+| Local preview at `localhost: 1313` | `hugo server` \(`-D` to include drafts\) |
+| Update all submodules | `git pull --recurse-submodules` |
+
 ## Basics
 
 ### Common commands
@@ -9,7 +17,6 @@
 | Install Hugo via brew | `brew install hugo` |
 | Verify that Hugo is installed | `which hugo` or `hugo version` |
 | Create a new site | `hugo new site davidfeng.us` |
-| Local preview at `localhost:1313` | `hugo server` \(add `-D` to include drafts\) |
 
 ### Use a theme
 
