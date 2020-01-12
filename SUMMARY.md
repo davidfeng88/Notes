@@ -10,6 +10,7 @@
 * [SSH](command-line/ssh.md)
 * [Create Temp Files](command-line/create-temp-files.md)
 * [Tools](command-line/tools.md)
+* [Pro Git](command-line/pro-git.md)
 
 ## JavaScript
 

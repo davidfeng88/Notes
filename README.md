@@ -143,4 +143,5 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 
 * [list 1](https://www.coderscat.com/best-cs-books)
 * [list 2](https://blog.pragmaticengineer.com/my-reading-list/)
+* [teach yourself CS](https://teachyourselfcs.com/) \([cn](https://github.com/keithnull/TeachYourselfCS-CN)\)
 
