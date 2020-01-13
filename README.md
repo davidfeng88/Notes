@@ -138,6 +138,7 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 * [Comparing Database Types](https://www.prisma.io/blog/comparison-of-database-models-1iz9u29nwn37)
 * [git flow](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow)
 * [自然语言处理](https://easyai.tech/blog/59pdf-nlp-all-in-one/)
+* Bit hacks \([1](https://graphics.stanford.edu/~seander/bithacks.html), [2](https://catonmat.net/low-level-bit-hacks)\)
 
 ### CS Books
 
