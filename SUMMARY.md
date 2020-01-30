@@ -45,5 +45,9 @@
 
 * [Don't Make Me Think](misc/dont-make-me-think.md)
 * [Anti-Intellectualism in American Life 美国的反智传统](misc/antiintellectualism-in-american-life-mei-guo-de-fan-zhi-chuan-tong.md)
-* [Health](misc/health.md)
+
+## Ergonomics
+
+* [Lower back](ergonomics/health.md)
+* [Setup](ergonomics/setup.md)
 

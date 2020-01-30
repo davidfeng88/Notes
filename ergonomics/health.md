@@ -1,6 +1,4 @@
-# Health
-
-腰痛
+# Lower back
 
 ![](../.gitbook/assets/processed.jpeg)
 
