@@ -19,6 +19,7 @@
 
 * [JavaScript Resources](javascript/javascript-resources.md)
 * [Numbers](javascript/numbers.md)
+* [URL processing](javascript/url-processing.md)
 
 ## Web
 
