@@ -2,14 +2,48 @@
 
 ## config file: .ssh/config
 
-With the following in the config file, `ssh orion` will connect to the server:
+With the following in the config file, `ssh dev` will connect to the server.
 
 ```bash
-Host orion
+Host dev
     User scott
     HostName orion.dev
     IdentityFile ~/.ssh/id_rsa
 ```
+
+General structure of the config file
+
+```bash
+Host hostname1
+    SSH_OPTION value
+    SSH_OPTION value
+
+Host hostname2
+    SSH_OPTION value
+
+Host *
+    SSH_OPTION value
+```
+
+A single ssh command can match multiple sections in the config file. If multiple sections set the same SSH\_OPTION, the first one wins. Therefore the generic settings \(matching \*\) comes last.
+
+Common ssh options includes:
+
+* Hostname
+* User
+* SendEnv
+* ProxyJump
+* IdentityFile
+* ForwardAgent
+* Port
+* AddKeysToAgent
+* UseKeychain
+* ServerAliveInterval
+
+Refs
+
+* [https://linuxize.com/post/using-the-ssh-config-file/](https://linuxize.com/post/using-the-ssh-config-file/)
+* [https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client](https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client)
 
 ## SCP
 
