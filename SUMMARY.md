@@ -18,6 +18,15 @@
 ## Resources
 
 * [K8s resources](resources/k8s-resources.md)
+* [web](resources/web.md)
+* [database](resources/database.md)
+* [misc](resources/misc.md)
+* [Unix](resources/unix.md)
+* [Vim](resources/vim.md)
+* [Tools](resources/tools.md)
+* [System Design](resources/system-design.md)
+* [Design Pattern](resources/design-pattern.md)
+* [Load Balancer](resources/load-balancer.md)
 
 ## JavaScript
 
