@@ -1,4 +1,4 @@
-# Git
+# Git Resources
 
 Git Catastrophes and Tips to Avoid Them
 
@@ -15,4 +15,10 @@ Git Flight Rules [https://github.com/k88hudson/git-flight-rules/blob/master/READ
 Git undoing [http://sethrobertson.github.io/GitFixUm/fixup.html](http://sethrobertson.github.io/GitFixUm/fixup.html) [http://sethrobertson.github.io/](http://sethrobertson.github.io/) [http://ohshitgit.com/](http://ohshitgit.com/) [https://support.beanstalkapp.com/article/1004-how-do-i-undo-things-in-git](https://support.beanstalkapp.com/article/1004-how-do-i-undo-things-in-git)
 
 How to teach git [https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
+
+LearnGitBranching [https://github.com/pcottle/learnGitBranching](https://github.com/pcottle/learnGitBranching)
+
+Git from the inside out [https://codewords.recurse.com/issues/two/git-from-the-inside-out](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
+
+
 

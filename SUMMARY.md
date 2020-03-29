@@ -12,8 +12,12 @@
 * [at and crontab - scheduling commands](command-line/scheduling-commands.md)
 * [gzip](command-line/gzip.md)
 * [Tools](command-line/tools.md)
-* [Pro Git](command-line/pro-git.md)
-* [Git](command-line/git.md)
+* [Pro Git](command-line/pro-git/README.md)
+  * [Git Resources](command-line/pro-git/git.md)
+
+## Resources
+
+* [K8s resources](resources/k8s-resources.md)
 
 ## JavaScript
 
@@ -38,6 +42,7 @@
 
 ## Career
 
+* [LeetCode Resources](career/leetcode-resources.md)
 * [沈公子 - 人家的屋顶](career/shen-gong-zi-ren-jia-de-wu-ding.md)
 * [Rands](career/rands.md)
 * [Erik Bernhardsson](career/erik-bernhardsson.md)
