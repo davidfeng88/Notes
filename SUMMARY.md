@@ -27,6 +27,12 @@
 * [System Design](resources/system-design.md)
 * [Design Pattern](resources/design-pattern.md)
 * [Load Balancer](resources/load-balancer.md)
+* [References](resources/references.md)
+* [Job Hunting](resources/job-hunting.md)
+* [Hardware](resources/hardware.md)
+* [Algorithm Resources](resources/leetcode-resources.md)
+* [Command Line Resources](resources/command-line-resources.md)
+* [Bash](resources/bash.md)
 
 ## JavaScript
 
@@ -51,7 +57,6 @@
 
 ## Career
 
-* [LeetCode Resources](career/leetcode-resources.md)
 * [沈公子 - 人家的屋顶](career/shen-gong-zi-ren-jia-de-wu-ding.md)
 * [Rands](career/rands.md)
 * [Erik Bernhardsson](career/erik-bernhardsson.md)
