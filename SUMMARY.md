@@ -12,12 +12,12 @@
 * [at and crontab - scheduling commands](command-line/scheduling-commands.md)
 * [gzip](command-line/gzip.md)
 * [Tools](command-line/tools.md)
-* [Pro Git](command-line/pro-git/README.md)
-  * [Git Resources](command-line/pro-git/git.md)
+* [Pro Git](command-line/pro-git.md)
 
 ## Resources
 
 * [K8s resources](resources/k8s-resources.md)
+* [Git Resources](resources/git.md)
 * [web](resources/web.md)
 * [database](resources/database.md)
 * [misc](resources/misc.md)
@@ -31,6 +31,7 @@
 * [Job Hunting](resources/job-hunting.md)
 * [Hardware](resources/hardware.md)
 * [Algorithm Resources](resources/leetcode-resources.md)
+* [Golang](resources/golang.md)
 * [Command Line Resources](resources/command-line-resources.md)
 * [Bash](resources/bash.md)
 
@@ -60,6 +61,7 @@
 * [沈公子 - 人家的屋顶](career/shen-gong-zi-ren-jia-de-wu-ding.md)
 * [Rands](career/rands.md)
 * [Erik Bernhardsson](career/erik-bernhardsson.md)
+* [Digest](career/digest.md)
 
 ## Misc
 

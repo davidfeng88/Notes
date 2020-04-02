@@ -1,5 +1,9 @@
 # web
 
+{% embed url="https://www.youtube.com/watch?v=owcvg2YZ7Y8" %}
+
+
+
 [https://hpbn.co](https://hpbn.co) / High Performance Browser Networking
 
 中文版第一章 [https://blog.csdn.net/xingtian713/article/details/11882203](https://blog.csdn.net/xingtian713/article/details/11882203) 中文翻译目录 [https://me.csdn.net/xingtian713](https://me.csdn.net/xingtian713)

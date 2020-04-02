@@ -12,6 +12,14 @@
 * [Working Productively in Bash's Vi Command Line Editing Mode \(with Cheat Sheet\)](http://www.catonmat.net/blog/bash-vi-editing-mode-cheat-sheet/)
 * [Helpful Terminal Commands for Beginners!](https://www.malikbrowne.com/blog/helpful-terminal-commands)
 
+
+
+awesome command line [https://www.kawabangga.com/posts/4012](https://www.kawabangga.com/posts/4012)
+
+{% embed url="https://blog.robertelder.org/data-science-linux-command-line/" %}
+
+
+
 The linux command line中文版书 [https://billie66.gitbooks.io/tlcl-cn/content/chap00/introduction.html](https://billie66.gitbooks.io/tlcl-cn/content/chap00/introduction.html)
 
 The Unix Chainsaw - Gary Bernhardt [https://www.youtube.com/watch?v=sCZJblyT\_XM](https://www.youtube.com/watch?v=sCZJblyT_XM)
@@ -107,4 +115,6 @@ ps aux: show all processes tail: get a hanging process
 curl -0L url/filename \#download unzip xyz.zip
 
 grep -n Waldo \* \#-n for line number use grep in vim: -n is added automatically. -i: ignore case.
+
+
 

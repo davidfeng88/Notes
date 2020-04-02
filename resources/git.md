@@ -20,5 +20,15 @@ LearnGitBranching [https://github.com/pcottle/learnGitBranching](https://github.
 
 Git from the inside out [https://codewords.recurse.com/issues/two/git-from-the-inside-out](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
 
+icdiff [https://github.com/jeffkaufman/icdiff](https://github.com/jeffkaufman/icdiff)
+
+patience diff [https://alfedenzo.livejournal.com/170301.html](https://alfedenzo.livejournal.com/170301.html)
+
+{% embed url="https://stackoverflow.com/questions/32365271/whats-the-difference-between-git-diff-patience-and-git-diff-histogram" %}
+
+common git commands [https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+
+
+
 
 

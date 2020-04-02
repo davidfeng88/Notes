@@ -256,3 +256,13 @@ Vim filname +123 =&gt; opens the file at line 123
 
 Study the .vimrc!!
 
+Linux and Vim notes [https://catonmat.net/linux-and-vim-notes](https://catonmat.net/linux-and-vim-notes)
+
+Some Vim plugins [https://catonmat.net/vim-plugins](https://catonmat.net/vim-plugins)
+
+Moving around in Vim [https://dev.to/iggredible/vim-cheatsheet-to-move-around-in-a-file-plus-tips-to-use-them-bme](https://dev.to/iggredible/vim-cheatsheet-to-move-around-in-a-file-plus-tips-to-use-them-bme)
+
+
+
+
+
