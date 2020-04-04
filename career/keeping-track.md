@@ -1,10 +1,37 @@
----
-description: 'https://randsinrepose.com/'
----
+# Keeping Track
 
-# Rands
+No one \(not you, not your manager\) remembers everything you did in the last year. To help yourself and your manager during the performance review season and remind yourself of the big picture, keep a brag document.
 
-## [Your Professional Growth Questionnaire](https://randsinrepose.com/archives/your-professional-growth-questionnaire/)
+{% embed url="https://jvns.ca/blog/brag-documents/" %}
+
+* List accomplishments
+* Include a theme or big picture
+* Include fuzzy work \(e.g. refactor, interview, etc.\)
+* Include follow up \(I shipped this feature, which has this impact\)
+
+### brag document template
+
+* Goal for this year / next year
+* Projects
+  * Accomplishments
+  * meta-work, e.g. can we cut scope?
+  * impact, numeric \(e.g. save x dollars, sell y dollars\) and non-numeric \(e.g. pass an audit\)
+* Collaboration & Mentorship
+  * help peers
+  * mentor intern / new hire
+  * answer questions from other teams
+  * code review
+  * internal talk or workshop
+* Design and Documentation
+* Company Building
+* What you learned
+* Outside of work
+  * blog posts
+  * talks / panels
+  * open source work
+  * industry recognition
+
+{% embed url="https://randsinrepose.com/archives/your-professional-growth-questionnaire/" %}
 
 Probably need to review these questions every quarter.
 
