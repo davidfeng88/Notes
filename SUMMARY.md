@@ -3,6 +3,7 @@
 * [Notes](README.md)
 * [Programming](programming/README.md)
   * [Programming - Best Practices](programming/programming-best-practices.md)
+* [Python](python.md)
 
 ## Command Line
 
