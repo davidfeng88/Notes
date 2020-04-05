@@ -12,6 +12,10 @@
 * [Working Productively in Bash's Vi Command Line Editing Mode \(with Cheat Sheet\)](http://www.catonmat.net/blog/bash-vi-editing-mode-cheat-sheet/)
 * [Helpful Terminal Commands for Beginners!](https://www.malikbrowne.com/blog/helpful-terminal-commands)
 
+{% embed url="https://linuxjourney.com/" %}
+
+
+
 
 
 awesome command line [https://www.kawabangga.com/posts/4012](https://www.kawabangga.com/posts/4012)

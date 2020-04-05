@@ -18,3 +18,7 @@ data-oriented programming: lay data in memory in a way that will make CPU cache 
 
 Cache Associatibility: also affect performance.
 
+{% embed url="https://coolshell.cn/articles/20793.html" %}
+
+
+

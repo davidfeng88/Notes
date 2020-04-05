@@ -22,5 +22,7 @@ Good example of tech talk
 
 {% embed url="https://www.youtube.com/watch?time\_continue=1&v=yY1FSsUV-8c&feature=emb\_logo" %}
 
+{% embed url="https://ocw.mit.edu/high-school/humanities-and-social-sciences/godel-escher-bach/" %}
+
 
 

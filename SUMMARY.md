@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Notes](README.md)
-* [Untitled](untitled.md)
+* [Programming](programming/README.md)
+  * [Programming - Best Practices](programming/programming-best-practices.md)
 
 ## Command Line
 
@@ -68,13 +69,10 @@
 
 * [Don't Make Me Think](misc/dont-make-me-think.md)
 * [Anti-Intellectualism in American Life 美国的反智传统](misc/antiintellectualism-in-american-life-mei-guo-de-fan-zhi-chuan-tong.md)
+* [AdTech 101](misc/adtech-101.md)
 
 ## Ergonomics
 
 * [Lower back](ergonomics/health.md)
 * [Setup](ergonomics/setup.md)
-
-## Ad Tech
-
-* [AdTech 101](ad-tech/adtech-101.md)
 
