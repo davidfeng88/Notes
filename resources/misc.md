@@ -24,5 +24,5 @@ Good example of tech talk
 
 {% embed url="https://ocw.mit.edu/high-school/humanities-and-social-sciences/godel-escher-bach/" %}
 
-
+{% embed url="https://blog.pragmaticengineer.com/my-reading-list/" %}
 
