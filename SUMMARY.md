@@ -58,21 +58,19 @@
 * [Listening Skills](soft-skills/listening-skills.md)
 * [Public Speaking](soft-skills/public-speaking.md)
 
-## Career
-
-* [Resume](career/resume.md)
-* [Interview](career/interview.md)
-* [Promotion](career/shen-gong-zi-ren-jia-de-wu-ding.md)
-* [Decide What to Work On](career/erik-bernhardsson.md)
-* [Keeping Track of Your Work](career/keeping-track.md)
-
 ## Misc
 
 * [Don't Make Me Think](misc/dont-make-me-think.md)
 * [Digest](misc/digest.md)
 * [Anti-Intellectualism in American Life 美国的反智传统](misc/antiintellectualism-in-american-life-mei-guo-de-fan-zhi-chuan-tong.md)
 * [AdTech 101](misc/adtech-101.md)
-* [Ergonomics](misc/ergonomics/README.md)
-  * [Work Env Setup](misc/ergonomics/setup.md)
-  * [Pain Relieve](misc/ergonomics/health.md)
+* [Career](career-1/README.md)
+  * [Resume](career-1/resume.md)
+  * [Interview](career-1/interview.md)
+  * [Promotion](career-1/shen-gong-zi-ren-jia-de-wu-ding.md)
+  * [Keeping Track of Your Work](career-1/keeping-track.md)
+  * [Decide What to Work On](career-1/erik-bernhardsson.md)
+* [Ergonomics](ergonomics/README.md)
+  * [Work Env Setup](ergonomics/setup.md)
+  * [Pain Relieve](ergonomics/health.md)
 
