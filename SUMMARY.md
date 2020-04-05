@@ -72,9 +72,7 @@
 * [Digest](misc/digest.md)
 * [Anti-Intellectualism in American Life 美国的反智传统](misc/antiintellectualism-in-american-life-mei-guo-de-fan-zhi-chuan-tong.md)
 * [AdTech 101](misc/adtech-101.md)
-
-## Ergonomics
-
-* [Lower back](ergonomics/health.md)
-* [Setup](ergonomics/setup.md)
+* [Ergonomics](misc/ergonomics/README.md)
+  * [Work Env Setup](misc/ergonomics/setup.md)
+  * [Pain Relieve](misc/ergonomics/health.md)
 
