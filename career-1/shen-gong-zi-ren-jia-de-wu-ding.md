@@ -39,3 +39,32 @@ How to move up from low level tech lead / manager?
 
 又如果，面试官根本不直接问这些问题，你可以在回答时把话题自然地带到这些点上吗？
 
+{% embed url="https://blog.pragmaticengineer.com/software-engineering-promotions/" %}
+
+* Prepare
+  * Understand the process at your company
+  * Self-assess: Most tech companies follow an approach of promoting people to the next level, who are already performing there.
+  * Get your manager on your side. **It is in the best interest of your manager for you to be promoted -** _**when**_ **you are ready.**
+  * Be realistic in promotions above the senior bar
+    * Budget limit
+    * harder to find large and impactful projects. Strategies:
+      * Wait?
+      * Move teams?
+      * Propose an initiative, convince stakeholders, and lead it
+* Set your sight on the promotion
+  * Set SMART goals: specific, measurable, attainable, realistic, timely.
+  * Act and take responsibility like you're already at the next level.
+  * [Keep a log of your achievements and impact](keeping-track.md)
+* Get help
+  * Get a mentor
+  * Ask frequent feedback from manager
+* Put in the work
+  * Don't alienate your peers
+  * Don't kick back, even when you feel things are in your pocket
+* Stay Grounded
+  * Don't believe anyone who promises you a "sure promotion."
+  * Don't have promotion be your only goal. At least you got those skills and experiences.
+  * Promotion is not the only way to get positive feedback
+  * Stay patient and be positive. It's a long game.
+* Help Others and Make Allies
+
