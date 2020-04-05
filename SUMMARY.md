@@ -4,6 +4,8 @@
 * [Programming](programming/README.md)
   * [Programming - Best Practices](programming/programming-best-practices.md)
 * [Python](python.md)
+* [Setup](setup/README.md)
+  * [Mac Setup](setup/mac-setup.md)
 
 ## Command Line
 
