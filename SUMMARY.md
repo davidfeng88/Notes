@@ -23,6 +23,7 @@
 * [web](resources/web.md)
 * [database](resources/database.md)
 * [misc](resources/misc.md)
+* [AdTech](resources/adtech.md)
 * [Unix](resources/unix.md)
 * [Vim](resources/vim.md)
 * [Tools](resources/tools.md)

@@ -26,3 +26,5 @@ Good example of tech talk
 
 {% embed url="https://blog.pragmaticengineer.com/my-reading-list/" %}
 
+{% embed url="https://humanwhocodes.com/blog/2012/06/12/the-care-and-feeding-of-software-engineers-or-why-engineers-are-grumpy/" %}
+
