@@ -113,3 +113,7 @@ shortening URL md5 convert to base62
 
 [https://blog.pragmaticengineer.com/distributed-architecture-concepts-i-have-learned-while-building-payments-systems/](https://blog.pragmaticengineer.com/distributed-architecture-concepts-i-have-learned-while-building-payments-systems/) [https://github.com/aphyr/distsys-class](https://github.com/aphyr/distsys-class) [https://gist.github.com/macintux/6227368](https://gist.github.com/macintux/6227368)
 
+{% embed url="https://blog.pragmaticengineer.com/distributed-architecture-concepts-i-have-learned-while-building-payments-systems/" %}
+
+{% embed url="https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/" %}
+

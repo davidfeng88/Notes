@@ -16,7 +16,5 @@ CORS [http://performantcode.com/web/do-you-really-know-cors](http://performantco
 
 三次握手 四次挥手 [http://blog.jobbole.com/114633/](http://blog.jobbole.com/114633/)
 
-
-
-
+{% embed url="https://coolshell.cn/articles/11564.html" %}
 
