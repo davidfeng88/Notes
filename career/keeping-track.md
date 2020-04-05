@@ -1,4 +1,4 @@
-# Keeping Track
+# Keeping Track of Your Work
 
 No one \(not you, not your manager\) remembers everything you did in the last year. To help yourself and your manager during the performance review season and remind yourself of the big picture, keep a brag document.
 

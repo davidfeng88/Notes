@@ -1,4 +1,4 @@
-# Erik Bernhardsson
+# Decide What to Work On
 
 ## [Miscellaneous unsolicited \(and possibly biased\) career advice](https://erikbern.com/2019/09/26/misc-unsolicited-career-advice.html)
 

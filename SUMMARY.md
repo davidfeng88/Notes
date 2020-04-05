@@ -60,14 +60,16 @@
 
 ## Career
 
-* [沈公子 - 人家的屋顶](career/shen-gong-zi-ren-jia-de-wu-ding.md)
-* [Erik Bernhardsson](career/erik-bernhardsson.md)
-* [Digest](career/digest.md)
-* [Keeping Track](career/keeping-track.md)
+* [Resume](career/resume.md)
+* [Interview](career/interview.md)
+* [Promotion](career/shen-gong-zi-ren-jia-de-wu-ding.md)
+* [Decide What to Work On](career/erik-bernhardsson.md)
+* [Keeping Track of Your Work](career/keeping-track.md)
 
 ## Misc
 
 * [Don't Make Me Think](misc/dont-make-me-think.md)
+* [Digest](misc/digest.md)
 * [Anti-Intellectualism in American Life 美国的反智传统](misc/antiintellectualism-in-american-life-mei-guo-de-fan-zhi-chuan-tong.md)
 * [AdTech 101](misc/adtech-101.md)
 
