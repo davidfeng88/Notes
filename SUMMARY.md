@@ -3,9 +3,12 @@
 * [Notes](README.md)
 * [Programming](programming/README.md)
   * [Programming - Best Practices](programming/programming-best-practices.md)
-* [Python](python.md)
+* [Python](python/README.md)
+  * [Python Resources](python/python-resources.md)
 * [Setup](setup/README.md)
   * [Mac Setup](setup/mac-setup.md)
+* [Command Line](command-line-1/README.md)
+  * [Processes](command-line-1/processes.md)
 
 ## Command Line
 
