@@ -18,3 +18,7 @@ CORS [http://performantcode.com/web/do-you-really-know-cors](http://performantco
 
 {% embed url="https://coolshell.cn/articles/11564.html" %}
 
+{% embed url="https://codewords.recurse.com/issues/five/what-restful-actually-means" %}
+
+
+

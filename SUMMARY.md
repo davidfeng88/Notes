@@ -25,6 +25,7 @@
 ## Resources
 
 * [K8s resources](resources/k8s-resources.md)
+* [JavaScript](resources/javascript.md)
 * [Git Resources](resources/git.md)
 * [web](resources/web.md)
 * [database](resources/database.md)

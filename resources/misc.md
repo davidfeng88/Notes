@@ -28,3 +28,11 @@ Good example of tech talk
 
 {% embed url="https://humanwhocodes.com/blog/2012/06/12/the-care-and-feeding-of-software-engineers-or-why-engineers-are-grumpy/" %}
 
+Functional programming
+
+{% embed url="https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming" %}
+
+{% embed url="https://codewords.recurse.com/issues/six/this-just-isnt-functional" %}
+
+
+
