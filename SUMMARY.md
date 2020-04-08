@@ -8,7 +8,7 @@
 * [Setup](setup/README.md)
   * [Mac Setup](setup/mac-setup.md)
 * [Command Line](command-line-1/README.md)
-  * [Processes](command-line-1/processes.md)
+  * [Basics](command-line-1/processes.md)
 
 ## Command Line
 

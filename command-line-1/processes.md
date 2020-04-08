@@ -1,10 +1,41 @@
-# Processes
+# Basics
 
-## See all processes
+## Multiple Commands
+
+```bash
+com1; com2 # will run com2 regardless of result of com1
+com1 && com2 # only run com2 when com1 succeeds
+com1 || echo "Failed" # only run echo when com1 fails
+```
+
+## Standard Stream
+
+stdin \(0\), stdout \(1\), stderr \(2\). 0, 1, 2 are their file descriptor \(fd\).
+
+### Redirect
+
+```bash
+cat < file1 # redirect stdin
+echo "hello" > file2 # override
+echo "world" >> file3 # append
+command2 2>&1 # combine stderr into stdout
+```
+
+## Environment Variables
+
+```bash
+env # show all environement variables
+export name=David # set
+export full_name="David Feng" # use quotes if value contains space
+```
+
+## Processes
+
+### See all processes
 
 `ps`
 
-## Kill a process
+### Kill a process
 
 | Signal | Effect | How to send |
 | :--- | :--- | :--- |
@@ -18,14 +49,14 @@ kill -9 pid # when multiple processes share the same name
 killall -9 process_name
 ```
 
-## Suspend a process
+### Suspend a process
 
 | Signal | How to send |
 | :--- | :--- |
 | SIGTSTP | Ctrl + Z or `kill -TSTP pid` |
 | SIGSTOP \(can't be ignored\) | `kill -STOP pid` |
 
-## Jobs
+### Jobs
 
 Run a command in background: `command &`
 
