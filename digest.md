@@ -30,7 +30,21 @@ Interesting idea. In the era of globalization, you probably want to become an "a
 
 **Writing Idea**: Definitely one of the most important lesson I learned during graduate school is that we should learn to sell. Presentation Skills. Chinese students vs. Domestic students.
 
-## Economy
+## Economy / Society
 
+{% embed url="https://mp.weixin.qq.com/s/cS13UVb3QG2axCQPZbmv8g" %}
 
+“印度化”有如下特点：
+
+1、上、下层生殖隔离，互相不通婚，类似有种姓制度。
+
+2、国内有2%的世界级精英，10%的正常人，剩下的是糊涂蛋；大家住在一起，但互相没义务。
+
+3、少量上层精英，接受精英教育；其他大部分下层人，接受随机教育，自生自灭，自由发展。事实上整个国家很自由，上、下层互相没有义务。你爱干啥干啥，只要不影响其他人，想干啥都没人管你，倒了霉也没人管你。
+
+4、整个国家宗教氛围浓厚，老百姓都有种“认命”的美德；越底层越反智，连基本的科学常识都不接受。
+
+6、政府内部各自为政，也就是大家说的，“散装的”。
+
+国家财政吃紧，从富人收不上税（利益集团游说减税），压力主要在中产。无法投资教育，底层只能“快乐教育“。
 
