@@ -30,3 +30,7 @@ Interesting idea. In the era of globalization, you probably want to become an "a
 
 **Writing Idea**: Definitely one of the most important lesson I learned during graduate school is that we should learn to sell. Presentation Skills. Chinese students vs. Domestic students.
 
+## Economy
+
+
+

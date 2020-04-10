@@ -20,5 +20,5 @@ CORS [http://performantcode.com/web/do-you-really-know-cors](http://performantco
 
 {% embed url="https://codewords.recurse.com/issues/five/what-restful-actually-means" %}
 
-
+{% embed url="https://developer.mozilla.org/en-US/docs/Web" %}
 
