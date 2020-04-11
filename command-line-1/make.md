@@ -1,4 +1,4 @@
-# Make
+# make
 
 ## What is Make?
 

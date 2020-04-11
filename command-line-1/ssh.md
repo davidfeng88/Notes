@@ -1,4 +1,4 @@
-# SSH
+# ssh
 
 ## config file: .ssh/config
 
