@@ -33,7 +33,7 @@ Several topics are ubiquitous \(i.e. they are important\): Unix Shell \(Bash\), 
 * Vim
 * Bash
 * Git
-* [x] [Makefiles](command-line/make.md)
+* [x] [Makefiles](command-line-1/make.md)
 * Terminal Config
 * Emacs
 * Package Managers
@@ -49,7 +49,7 @@ Several topics are ubiquitous \(i.e. they are important\): Unix Shell \(Bash\), 
 * Plotting and Programming in Python
 * Programming with R
 * R for Reproducible Scientific Analysis
-* [x] [Automation and Make](command-line/make.md)
+* [x] [Automation and Make](command-line-1/make.md)
 * Programming with MATLAB
 * Using Databases and SQL
 * Version Control with Mercurial

@@ -8,18 +8,19 @@
 * [Setup](setup/README.md)
   * [Mac Setup](setup/mac-setup.md)
 * [Command Line](command-line-1/README.md)
-  * [Basics](command-line-1/processes.md)
+  * [Basics](command-line-1/processes/README.md)
+    * [Bash](command-line-1/processes/bash.md)
+  * [Create Temp Files](command-line-1/create-temp-files.md)
+  * [awk](command-line-1/awk.md)
+  * [Bash Script](command-line-1/bash-script.md)
+  * [Make](command-line-1/make.md)
+  * [SSH](command-line-1/ssh.md)
+  * [gzip](command-line-1/gzip.md)
+  * [Command line tools](command-line-1/tools.md)
+  * [at and crontab - scheduling commands](command-line-1/scheduling-commands.md)
 
 ## Command Line
 
-* [AWK](command-line/awk.md)
-* [Bash Script](command-line/bash-script.md)
-* [Make](command-line/make.md)
-* [SSH](command-line/ssh.md)
-* [Create Temp Files](command-line/create-temp-files.md)
-* [at and crontab - scheduling commands](command-line/scheduling-commands.md)
-* [gzip](command-line/gzip.md)
-* [Tools](command-line/tools.md)
 * [Pro Git](command-line/pro-git.md)
 
 ## Resources
@@ -43,7 +44,6 @@
 * [Algorithm Resources](resources/leetcode-resources.md)
 * [Golang](resources/golang.md)
 * [Command Line Resources](resources/command-line-resources.md)
-* [Bash](resources/bash.md)
 
 ## JavaScript
 
