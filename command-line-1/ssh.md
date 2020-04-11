@@ -1,5 +1,9 @@
 # ssh
 
+* logout: exit or Ctrl-D \(in shell it means end of input\)
+* run remote command without going into the remote shell: `ssh user@hostname "command"`
+* ssh keys are stored in `~/.ssh`
+
 ## config file: .ssh/config
 
 With the following in the config file, `ssh dev` will connect to the server.
@@ -54,6 +58,7 @@ scp localfile.txt scott@orion.dev:
 scp localfile.txt scott@orion.dev:/var/tmp
 # Get file from server to current local folder
 scp scott@orion.dev:filename.txt .
+# use -r for directory
 ```
 
 ## SSH Tunnel
