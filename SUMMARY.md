@@ -10,7 +10,7 @@
 * [Command Line](command-line-1/README.md)
   * [Basics](command-line-1/processes/README.md)
     * [Bash](command-line-1/processes/bash.md)
-  * [Bash Script](command-line-1/bash-script.md)
+  * [Bash script](command-line-1/bash-script.md)
   * [Create temp files](command-line-1/create-temp-files.md)
   * [awk](command-line-1/awk.md)
   * [make](command-line-1/make.md)

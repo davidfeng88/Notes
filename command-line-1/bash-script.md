@@ -1,4 +1,4 @@
-# Bash Script
+# Bash script
 
 ## Basics
 
