@@ -1,5 +1,37 @@
 # Basics
 
+## Echo
+
+```bash
+echo Hello
+Hello
+echo Hello World
+Hello World
+echo Hello    World # multiple whilespaces
+Hello World
+echo 'Hello   World' # quotes
+Hello   World
+echo ~ # shell will expand ~ and pass to echo
+```
+
+## cd
+
+```bash
+cd .. # go up one level
+cd ~
+cd - # go to previous directory
+```
+
+## ls
+
+```bash
+ls
+ls -l # list mode
+ls -a # include dot files
+ls -h # human readable size info
+
+```
+
 ## Multiple Commands
 
 ```bash
