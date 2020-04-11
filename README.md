@@ -8,7 +8,12 @@ Recently on Hacker News, I saw a discussion about [Hacker Tools](https://hacker-
 
 Several topics are ubiquitous \(i.e. they are important\): Unix Shell \(Bash\), Text Editor \(Vim\), Version control \(Git\). They are important tools for almost all software engineers, no matter what language/library you use. Make sure to master those skills.
 
-### [MIT Hacker Tools](https://hacker-tools.github.io/)
+### [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+
+* [x] [Course Overview + the shell](command-line-1/processes.md)
+* [ ] [Shell Tools and Scripting](command-line-1/bash-script.md)
+
+
 
 * [x] [Virtual machines and containers](tools/containers.md)
 * [ ] Shell and scripting

@@ -57,6 +57,21 @@ List
 * -t: order by time of last change
 * -r: reverse order
 
+```bash
+missing:~$ ls -l /home
+drwxr-xr-x 1 missing  users  4096 Jun 15  2019 missing
+```
+
+d: missing is a directory.
+
+owner: missing
+
+owning group: users
+
+rwx: read, write, execute permissions of owner, owning group, and everyone else.
+
+4096: size.
+
 ### cd
 
 Change directory.
@@ -142,6 +157,33 @@ find . # shows all files and directories
 find . -type d # only show directories. type f is for files
 find . -name '*.txt' # use quotes around txt so that shell does not expand it
 wc -l $(find . -name '*.txt') # subshell commands run first. Just like expanding the wildcards.
+```
+
+## Other commands
+
+### date
+
+prints current date.
+
+### whoami
+
+prints the current user
+
+### which
+
+shows the location of a command. e.g. `which echo`
+
+### tee
+
+Duplicate output.
+
+```bash
+echo hello | tee output.txt
+# hello goes to 1. output.txt, 2. stdout
+
+echo "newline" | sudo tee -a /etc/file.conf
+# sudo echo "newline" > /etc/file.conf does not work
+# since you need sudo to write to the file.
 ```
 
 ## Multiple Commands
@@ -262,6 +304,10 @@ list all jobs: `jobs`
 * search by permission: `$ find . -type f -perm -u=x`
 * -x permission for directory: right to traverse the directory \(can see inner directories\), but not to look at the content.
 
+### root
+
+root user can do almost anything. Usually we don't login as root, but use `sudo`do something as su \(super user\).
+
 ## Aliases
 
 `alias up='cd ..'`. We can remove a shortcut with `unalias`. e.g. `unalias upupup`.
@@ -279,7 +325,11 @@ if [ -f $HOME/.bashrc ]; then
 fi
 ```
 
-Prompt is `PS1`.
+## Prompt
+
+`PS1`
+
+$ means that you are not the root user.
 
 ## Misc
 
