@@ -1,4 +1,4 @@
-# Create Temp Files
+# Create temp files
 
 ```bash
 #!/bin/bash
