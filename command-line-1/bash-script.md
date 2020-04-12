@@ -10,13 +10,31 @@ The first line of the script is
 
 If the script is in the $PATH \(e.g. `/usr/bin`\), we can just type `my.sh` instead of `./my.sh` to run it.
 
+Best practice to increase portability:
+
+```bash
+# instead of
+#!/usr/local/bin/python
+# use
+#!/usr/bin/env python
+```
+
+### Differences between shell functions and other scripts \(e.g. python scripts\)
+
+Functions are executed in the current shell environment whereas scripts execute in their own process. Thus, functions can modify environment variables, e.g. change your current directory, whereas scripts can’t. Scripts will be passed by value environment variables that have been exported using `export`
+
+
+
 ### Variables
 
 ```bash
 a=Hello # no spaces!
+# a = Hello means run a with = and Hello as arguments
 
 echo $a # Hello
 echo "$a" # Hello
+echo '$a' # $a
+echo a # a
 
 # add attributes to variables
 declare -i d=123 # d is an integer
@@ -40,6 +58,33 @@ val=$((expression))
 e=5
 e+=2 # string concatenation
 ((e+=2)) # arithmetic
+```
+
+### Command substitution
+
+```bash
+d=$(pwd) # run pwd and put the result in d.
+```
+
+### Process substitution
+
+```bash
+command -a <(CMD) # execute CMD, put output in a temp file,
+# replace <() with the temp file name.
+# useful when command expects input as a file instead of STDIN
+
+# Example:
+mkdir foo bar
+
+# This creates files foo/a, foo/b, ... foo/h, bar/a, bar/b, ... bar/h
+touch {foo,bar}/{a..h}
+touch foo/x bar/y
+# Show differences between files in foo and bar
+diff <(ls foo) <(ls bar)
+# Outputs
+# < x
+# ---
+# > y
 ```
 
 ### Comparisons
@@ -245,15 +290,37 @@ function numberThings {
 numberthings $(ls)
 ```
 
-### Interact with the User
-
-#### Arguments
+### Arguments
 
 Anything with space in it needs quotes.
 
+* `$0`: name of the script
 * `$1`: first argument
 * `$#`: the number of arguments
 * `$@`: the arguments array
+* `$?`: return code of previous command
+* `$$`: PID of current script
+* `$_`: last argument of previous command
+
+```bash
+#!/bin/bash
+
+echo "Starting program at $(date)" # Date will be substituted
+
+echo "Running program $0 with $# arguments with pid $$"
+
+for file in $@; do
+    grep foobar $file > /dev/null 2> /dev/null
+    # When pattern is not found, grep has exit status 1
+    # We redirect STDOUT and STDERR to a null register since we do not care about them
+    if [[ $? -ne 0 ]]; then
+        echo "File $file does not have any foobar, adding one"
+        echo "# foobar" >> "$file"
+    fi
+done
+```
+
+### Interact with the User
 
 #### Working with flags
 

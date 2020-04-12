@@ -215,6 +215,12 @@ ls > /dev/null # discard the output.
 $ set # shows shell variables
 # if you don’t give "set" any arguments, it might as well show you things you could set.
 
+$ which set
+# no output, meaning it's an internal command of bash
+
+$ which env
+/usr/bin/env
+
 echo $PATH # show the value of a variable
 a=abc # create a variable
 a=def # change a variable
@@ -292,7 +298,7 @@ list all jobs: `jobs`
 
 * `history | tail -n 5`: show the last 5 commands.
 * `!123`: rerun command `123`.
-* `!!`: rerun last command.
+* `!!`: rerun last command. `sudo !!` is very common.
 * **`C-r`: search in history.**
 * `!$`: last word of last command.
 
