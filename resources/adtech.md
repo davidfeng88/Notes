@@ -12,5 +12,8 @@ ODC Internal
 
 [https://confluence.oracledatacloud.com/display/DS/Data+Science+101+Summer+2018+Curriculum](https://confluence.oracledatacloud.com/display/DS/Data+Science+101+Summer+2018+Curriculum)
 
-[https://confluence.oracledatacloud.com/display/TC/DMP+New+Hire+Onboarding+Program](https://confluence.oracledatacloud.com/display/TC/DMP+New+Hire+Onboarding+Program)
+{% embed url="https://confluence.oracledatacloud.com/display/TC/DMP+New+Hire+Onboarding+Program" %}
+
+* [Xandr Industry Reference](https://wiki.xandr.com/display/industry/Welcome)
+* [https://academy.mediamath.com/](https://academy.mediamath.com/)
 

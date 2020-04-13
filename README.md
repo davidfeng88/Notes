@@ -124,11 +124,6 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 
 {% file src=".gitbook/assets/docshare.tips\_cli-git-emacs-dotfiles.pdf" caption="Command Line PDF Ref" %}
 
-### Ad Tech
-
-* [Xandr Industry Reference](https://wiki.xandr.com/display/industry/Welcome)
-* ODC internal material
-
 ### System Design / Distributed System
 
 * [Jeff Dean lecture](http://videolectures.net/wsdm09_dean_cblirs/)
