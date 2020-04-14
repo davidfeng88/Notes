@@ -10,13 +10,18 @@ The first line of the script is
 
 If the script is in the $PATH \(e.g. `/usr/bin`\), we can just type `my.sh` instead of `./my.sh` to run it.
 
+```bash
+# add current working directory to path
+PATH=$PATH:$PWD
+```
+
 Best practice to increase portability:
 
 ```bash
 # instead of
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
 # use
-#!/usr/bin/env python
+#!/usr/bin/env python3
 ```
 
 ### Differences between shell functions and other scripts \(e.g. python scripts\)

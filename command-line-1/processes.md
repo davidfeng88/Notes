@@ -186,6 +186,18 @@ echo "newline" | sudo tee -a /etc/file.conf
 # since you need sudo to write to the file.
 ```
 
+### yes
+
+* no argument: output y, infinite loop.
+* with argument: output argument, infinite loop.
+
+```bash
+yes no # output no
+# usage
+# skip user confirmation
+yes | sudo apt-get install ...
+```
+
 ## Multiple Commands
 
 ```bash
@@ -306,7 +318,10 @@ list all jobs: `jobs`
 
 * Unix groups are stored in `/etc/group`
 * `chmod u=rw g=r a= a.txt` \(user, group, all\)
+* `chmod -x`
 * `chmod 000 *_015*`
+  * 1: x; 2: w; 4:r
+  * don't use 777. Use chown/chgrp \(change owner, change group\)
 * search by permission: `$ find . -type f -perm -u=x`
 * -x permission for directory: right to traverse the directory \(can see inner directories\), but not to look at the content.
 
