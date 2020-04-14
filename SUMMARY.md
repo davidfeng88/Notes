@@ -17,10 +17,7 @@
   * [gzip](command-line-1/gzip.md)
   * [Command line tools](command-line-1/tools.md)
   * [at and crontab - scheduling commands](command-line-1/scheduling-commands.md)
-
-## Command Line
-
-* [Pro Git](command-line/pro-git.md)
+* [Pro Git](pro-git.md)
 
 ## Resources
 

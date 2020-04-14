@@ -1,6 +1,6 @@
 # Pro Git
 
-![](../.gitbook/assets/progit2.png)
+![](.gitbook/assets/progit2.png)
 
 ## 第一章 起步
 
