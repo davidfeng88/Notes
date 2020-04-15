@@ -48,3 +48,41 @@ Interesting idea. In the era of globalization, you probably want to become an "a
 
 国家财政吃紧，从富人收不上税（利益集团游说减税），压力主要在中产。无法投资教育，底层只能“快乐教育“。
 
+{% embed url="https://www.youtube.com/watch?v=PHe0bXAIuk0" %}
+
+Three main forces that drive the economy:
+
+* Productivity growth
+* Short term debt cycle \(5-8 years\)
+* Long term debt cycle \(75-100 years\)
+
+Transaction: buyer uses money/credit to exchange goods/service/financial assets.
+
+Any two entities \(lender and borrower\) can create credit out of thin air. As credit is created, debt is created as the same time. It's an asset for the lender, liability for the borrower. When the borrower pays back, the transaction is settled.
+
+Increased income =&gt; increased borrowing \(interest is low\) =&gt; increased spending =&gt; other people's increased income
+
+Cycles: consume more than we can afford when we acquire debt, and spend less when we have to pay it back.
+
+debt cycle: When you use credit, some time in the future you have to pay it back.
+
+Short term cycle: expansion \(credit is easily available =&gt; increase spending\) =&gt; inflation =&gt; central bank increases interest rate, so fewer people can borrow money =&gt; less credit =&gt; spending decreases =&gt; deflation \(prices go down\) =&gt; recession =&gt; central bank lowers interest rate =&gt; expansion
+
+But, if you compare each cycle, the debt is still going up overall, which leads to the long term debt cycle. 2008 - deleveraging. This is worse than a recession because interest rate is already low. What do we do now?
+
+* Cut spending
+* Reduce debt
+* wealth redistribution
+* print money
+  * First three is painful and deflationary. This one is inflationary and stimulative.
+  * Drives up assets price. Central bank prints money, buys government bond, \(lends money to government\). Government spend money on goods and services.
+* Policy makers need to balance the deflationary methods and the inflationary method. If done well, it's a beautiful deleveraging.
+  * if the new printed money offsets the falling credit, there won't be inflation.
+  * The income \(spending\) increase must grow faster than the debt \(debt has interest\)
+
+Takeaway:
+
+* Don't let debt grow faster than income.
+* Don't have income grow faster than productivity. \(you'll become uncompetitive\) &lt;= **writing idea.**
+* **Do all that you can to grow your productivity, because in the long run, that's what matters the most. &lt;= change industry.**
+
