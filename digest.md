@@ -86,3 +86,36 @@ Takeaway:
 * Don't have income grow faster than productivity. \(you'll become uncompetitive\) &lt;= **writing idea.**
 * **Do all that you can to grow your productivity, because in the long run, that's what matters the most. &lt;= change industry.**
 
+{% embed url="https://www.youtube.com/watch?v=WEDIj9JBTC8" %}
+
+If an outside investor invests $500 for 1/3 of the company, the company is worth $1500, and $1000 is **goodwill**.
+
+EBIT \(earnings before interest and taxes\) = revenue - cost of goods \(COGS\) - depreciation of fixed assets - labor
+
+Margin = EBIT/revenue
+
+Investor has higher risk than lender, but he could make more money when the business is doing well.
+
+Senior debt = lower risk = lower return
+
+Keys to successful investment:
+
+* Invest in public companies
+* Understand how the company makes money
+* Invest at a reasonable price
+* Invest in a company that could last forever
+* Find a company with limited debt
+* Look for high barriers to entry
+* Invest in a company immune to extrinsic factors
+* Invest in a company with low reinvestment costs
+* Avoid businesses with controlling shareholders
+
+A good money manager:
+
+* Can easily explain investment strategy
+* Has a good reputation
+* Has value approach \(vs. technical approach\)
+* Has a successful track record of at least 5 years
+* Has a consistent approach
+* Invests own money in the fund
+
