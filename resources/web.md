@@ -22,3 +22,5 @@ CORS [http://performantcode.com/web/do-you-really-know-cors](http://performantco
 
 {% embed url="https://developer.mozilla.org/en-US/docs/Web" %}
 
+{% embed url="https://wangdoc.com/" %}
+
