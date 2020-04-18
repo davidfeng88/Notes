@@ -146,5 +146,5 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 * [list 2](https://blog.pragmaticengineer.com/my-reading-list/)
 * [teach yourself CS](https://teachyourselfcs.com/) \([cn](https://github.com/keithnull/TeachYourselfCS-CN)\)
 
-Rewrite bara frontend from React to Vue after Vue 3 is released? Or have double frontend?
+Configure iTerms2.
 
