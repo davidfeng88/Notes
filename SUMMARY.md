@@ -76,5 +76,8 @@
 * [Ergonomics](ergonomics/README.md)
   * [Work Env Setup](ergonomics/setup.md)
   * [Pain Relieve](ergonomics/health.md)
-* [Misc Digest - Writing Ideas](digest.md)
+* [Digest / Writing Ideas](digest-writing-ideas/README.md)
+  * [Economy / Society](digest-writing-ideas/digest.md)
+  * [How to spend your time](digest-writing-ideas/how-to-spend-your-time.md)
+  * [Life](digest-writing-ideas/life.md)
 
