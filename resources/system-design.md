@@ -117,3 +117,7 @@ shortening URL md5 convert to base62
 
 {% embed url="https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/" %}
 
+DDIA Book Review
+
+{% embed url="https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/" %}
+
