@@ -14,6 +14,8 @@
 
 {% embed url="https://linuxjourney.com/" %}
 
+{% embed url="https://wangdoc.com/bash/index.html" %}
+
 
 
 
