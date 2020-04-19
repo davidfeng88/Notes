@@ -65,7 +65,6 @@
 ## Misc
 
 * [Don't Make Me Think](misc/dont-make-me-think.md)
-* [Anti-Intellectualism in American Life 美国的反智传统](misc/antiintellectualism-in-american-life-mei-guo-de-fan-zhi-chuan-tong.md)
 * [AdTech 101](misc/adtech-101.md)
 * [Career](career-1/README.md)
   * [Resume](career-1/resume.md)
@@ -77,6 +76,9 @@
   * [Work Env Setup](ergonomics/setup.md)
   * [Pain Relieve](ergonomics/health.md)
 * [Digest / Writing Ideas](digest-writing-ideas/README.md)
+  * [Books](digest-writing-ideas/books/README.md)
+    * [Antifragile](digest-writing-ideas/books/antifragile.md)
+    * [Anti-Intellectualism in American Life 美国的反智传统](digest-writing-ideas/books/antiintellectualism-in-american-life-mei-guo-de-fan-zhi-chuan-tong.md)
   * [Economy / Society](digest-writing-ideas/digest.md)
   * [How to spend your time](digest-writing-ideas/how-to-spend-your-time.md)
   * [Life](digest-writing-ideas/life.md)
