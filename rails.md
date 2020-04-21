@@ -106,5 +106,5 @@ User.first.microposts
 ...
 ```
 
-> ## 3. Sample App
+## 3. Sample App
 
