@@ -82,4 +82,5 @@
   * [Economy / Society](digest-writing-ideas/digest.md)
   * [How to spend your time](digest-writing-ideas/how-to-spend-your-time.md)
   * [Life](digest-writing-ideas/life.md)
+* [Rails](rails.md)
 
