@@ -108,3 +108,17 @@ User.first.microposts
 
 ## 3. Sample App
 
+```bash
+rails t # run tests
+rails g controller ControllerName <optional action names> # g is short for generate
+# undo
+rails destroy controller ControllerName <optional action names>
+# generate / destroy models
+rails generate model User name:string email:string
+rails destroy model User
+
+rails db:migrate
+rails db:rollback
+rails db:migrate VERSION=0
+```
+
