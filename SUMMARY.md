@@ -25,7 +25,6 @@
   * [Rails](web-developement/rails.md)
   * [Hugo](web-developement/hugo.md)
   * [REST APIs](web-developement/rest-apis.md)
-* [Pro Git](pro-git.md)
 * [Soft Skills](soft-skills/README.md)
   * [Listening Skills](soft-skills/listening-skills.md)
   * [Public Speaking](soft-skills/public-speaking.md)
@@ -69,4 +68,5 @@
   * [Algorithm Resources](resources/leetcode-resources.md)
   * [Golang](resources/golang.md)
   * [Command Line Resources](resources/command-line-resources.md)
+* [Pro Git](pro-git.md)
 
