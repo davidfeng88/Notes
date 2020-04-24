@@ -122,7 +122,7 @@ rails db:rollback
 rails db:migrate VERSION=0
 ```
 
-## Rails-flavored Ruby
+## 4. Rails-flavored Ruby
 
 ### Strings
 
@@ -179,6 +179,8 @@ func # when no argument is provided, we don't even need () to invoke it
 
 ### Other data structures
 
+#### Arrays and Ranges
+
 ```ruby
 # string to array
 >> "foo bar baz".split # Split a string into a three-element array.
@@ -227,5 +229,212 @@ NoMethodError: undefined method `to_a' for 9:Fixnum
 => ["a", "b", "c", "d", "e"]
 ```
 
-### Blocks
+#### Blocks
+
+```ruby
+>> (1..5).each { |i| puts 2 * i }
+2
+4
+6
+8
+10
+=> 1..5
+
+# multi-line block
+>> (1..5).each do |i|
+?> puts 2 * i
+>> end
+
+>> 3.times { puts "Betelgeuse!" }   # 3.times takes a block with no variables.
+"Betelgeuse!"
+"Betelgeuse!"
+"Betelgeuse!"
+=> 3
+>> (1..5).map { |i| i**2 }          # The ** notation is for 'power'.
+=> [1, 4, 9, 16, 25]
+>> %w[a b c]                        # Recall that %w makes string arrays.
+=> ["a", "b", "c"]
+>> %w[a b c].map { |char| char.upcase }
+=> ["A", "B", "C"]
+>> %w[A B C].map { |char| char.downcase }
+=> ["a", "b", "c"]
+>> %w[A B C].map(&:downcase) # symbol-to-proc
+=> ["a", "b", "c"]
+```
+
+#### Hashes and symbols
+
+```ruby
+# hashes
+>> user = {}                          # {} is an empty hash.
+=> {}
+>> user["first_name"] = "Michael"     # Key "first_name", value "Michael"
+=> "Michael"
+>> user["last_name"] = "Hartl"        # Key "last_name", value "Hartl"
+=> "Hartl"
+>> user["first_name"]                 # Element access is like arrays.
+=> "Michael"
+>> user                               # A literal representation of the hash
+=> {"last_name"=>"Hartl", "first_name"=>"Michael"}
+>> user[:password]          # Access the value of an undefined key.
+=> nil
+
+# usually the keys of hashes are symbols, not strings
+:name # symbols are hashes without baggages, faster to compare equality
+>> h1 = { :name => "Michael Hartl", :email => "michael@example.com" }
+=> {:name=>"Michael Hartl", :email=>"michael@example.com"}
+>> h2 = { name: "Michael Hartl", email: "michael@example.com" }
+=> {:name=>"Michael Hartl", :email=>"michael@example.com"}
+>> h1 == h2
+=> true
+
+# hashes can use blocks
+>> flash = { success: "It worked!", danger: "It failed." }
+=> {:success=>"It worked!", :danger=>"It failed."}
+>> flash.each do |key, value|
+?>    puts "Key #{key.inspect} has value #{value.inspect}"
+>> end
+Key :success has value "It worked!"
+Key :danger has value "It failed."
+
+# p, puts, inspect
+>> (1..5).to_a
+=> [1, 2, 3, 4, 5]
+>> (1..5).to_a.inspect
+=> "[1, 2, 3, 4, 5]" # inspect returns the literal representation
+>> puts (1..5).to_a              # Put an array as a string.
+1
+2
+3
+4
+5
+=> nil
+>> puts (1..5).to_a.inspect      # Put a literal array.
+[1, 2, 3, 4, 5]
+=> nil
+>> p (1..5).to_a # p prints the literal and returns the object
+[1, 2, 3, 4, 5]
+=> [1, 2, 3, 4, 5]
+```
+
+#### helper function revisit
+
+```ruby
+<%= stylesheet_link_tag 'application', media: 'all',
+                                      'data-turbolinks-track': 'reload' %>
+                                      
+# Parentheses on function calls are optional.
+# This:
+stylesheet_link_tag('application', media: 'all',
+                                   'data-turbolinks-track': 'reload')
+# is the same as this:
+stylesheet_link_tag 'application', media: 'all',
+                                   'data-turbolinks-track': 'reload'
+
+# Curly braces on final hash arguments are optional.
+# This:
+stylesheet_link_tag 'application', { media: 'all',
+                                    'data-turbolinks-track': 'reload' }
+# is the same as this:
+stylesheet_link_tag 'application', media: 'all',
+                                   'data-turbolinks-track': 'reload'
+```
+
+### Ruby Classes
+
+```ruby
+# String
+>> s = "foobar"      # A literal constructor for strings using double quotes
+=> "foobar"
+>> s.class
+=> String
+
+>> s = String.new("foobar")         # A named constructor for a string
+=> "foobar"
+>> s.class
+=> String
+>> s == "foobar"
+=> true
+
+# Array
+>> a = Array.new([1, 3, 2])
+=> [1, 3, 2]
+
+# Hash
+>> h = Hash.new
+=> {}
+>> h[:foo]              # Try to access the value for the nonexistent key :foo.
+=> nil
+>> h = Hash.new(0)      # Arrange for nonexistent keys to return 0 instead of nil.
+=> {}
+>> h[:foo]
+=> 0
+
+# the new method is a class method
+# 'foobar'.length length is a instance method
+
+# inheritance
+>> s = String.new("foobar")
+=> "foobar"
+>> s.class                          # Find the class of s.
+=> String
+>> s.class.superclass               # Find the superclass of String.
+=> Object
+>> s.class.superclass.superclass    # Ruby has a BasicObject base class as of 1.9
+=> BasicObject
+>> s.class.superclass.superclass.superclass
+=> nil
+
+>> class Word < String              # Word inherits from String.
+>>    # Returns true if the string is its own reverse.
+>>  def palindrome?
+>>    self == self.reverse          # self is the string itself.
+      # inside of the class, the use of 'self.' is optional on a method or
+      # attribute, unless we are making an assignment.
+      # so this line can also be written as self == reverse
+>>  end
+>> end
+
+>> s = Word.new("level")    # Make a new Word, initialized with "level".
+=> "level"
+>> s.palindrome?            # Words have the palindrome? method.
+=> true
+>> s.length                 # Words also inherit all the normal string methods.
+=> 5
+
+# monkey patching built-in class
+>> class String
+>>  # Returns true if the string is its own reverse.
+>>  def palindrome?
+>>    self == self.reverse
+>>  end
+>> end
+=> nil
+>> "deified".palindrome?
+=> true
+
+# An example
+class User
+  # creates getters and setters for instance variables @name @email
+  attr_accessor :name, :email
+
+  # constructor, the method being called when User.new(...)
+  def initialize(attributes = {})
+    @name = attributes[:name]
+    @email = attributes[:email]
+  end
+
+  def formatted_email
+    "#{@name} <#{@email}>"
+  end
+end
+
+# in irb
+>> require './example_user'     # This is how you load the example_user code.
+=> true
+```
+
+### 5. Filling in the layout
+
+
 
