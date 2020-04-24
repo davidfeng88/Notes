@@ -15,7 +15,7 @@ Several topics are ubiquitous \(i.e. they are important\): Unix Shell \(Bash\), 
 
 
 
-* [x] [Virtual machines and containers](tools/containers.md)
+* [x] [Virtual machines and containers](containers.md)
 * [ ] Shell and scripting
 * Command-line environment
 * Data wrangling

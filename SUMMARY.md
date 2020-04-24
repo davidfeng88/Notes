@@ -54,12 +54,10 @@
 
 ## Tools
 
-* [Containers](tools/containers.md)
-
-## Soft Skills
-
-* [Listening Skills](soft-skills/listening-skills.md)
-* [Public Speaking](soft-skills/public-speaking.md)
+* [Containers](containers.md)
+* [Soft Skills](soft-skills/README.md)
+  * [Listening Skills](soft-skills/listening-skills.md)
+  * [Public Speaking](soft-skills/public-speaking.md)
 * [Career](career-1/README.md)
   * [Resume](career-1/resume.md)
   * [Interview](career-1/interview.md)
