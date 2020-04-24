@@ -23,7 +23,7 @@ rails s
 # go to http://localhost:3000
 ```
 
-![default Rails directory structure](.gitbook/assets/01tab02.jpg)
+![default Rails directory structure](../.gitbook/assets/01tab02.jpg)
 
 ### Gemfile
 
@@ -68,7 +68,7 @@ $ rails generate scaffold User name:string email:string
 $ rails db:migrate
 ```
 
-![page URLs for the Users resource](.gitbook/assets/02tab01.jpg)
+![page URLs for the Users resource](../.gitbook/assets/02tab01.jpg)
 
 {% code title="config/routes.rb" %}
 ```ruby
@@ -79,7 +79,7 @@ end
 ```
 {% endcode %}
 
-![RESTful routes provided by Users resource](.gitbook/assets/02tab02.jpg)
+![RESTful routes provided by Users resource](../.gitbook/assets/02tab02.jpg)
 
 ### More models
 

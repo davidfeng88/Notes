@@ -46,12 +46,11 @@
 * [JavaScript Resources](javascript/javascript-resources.md)
 * [Numbers](javascript/numbers.md)
 * [URL processing](javascript/url-processing.md)
-
-## Web
-
-* [Chrome Dev Tools](web/chrome-dev-tools.md)
-* [Hugo](web/hugo.md)
-* [REST APIs](web/rest-apis.md)
+* [Web Developement](web-developement/README.md)
+  * [Chrome Dev Tools](web-developement/chrome-dev-tools.md)
+  * [Rails](web-developement/rails.md)
+  * [Hugo](web-developement/hugo.md)
+  * [REST APIs](web-developement/rest-apis.md)
 
 ## Tools
 
@@ -64,8 +63,8 @@
 
 ## Misc
 
-* [Don't Make Me Think](misc/dont-make-me-think.md)
 * [AdTech 101](misc/adtech-101.md)
+* [Don't Make Me Think](dont-make-me-think.md)
 * [Career](career-1/README.md)
   * [Resume](career-1/resume.md)
   * [Interview](career-1/interview.md)
@@ -82,5 +81,5 @@
   * [Economy / Society](digest-writing-ideas/digest.md)
   * [How to spend your time](digest-writing-ideas/how-to-spend-your-time.md)
   * [Life](digest-writing-ideas/life.md)
-* [Rails](rails.md)
+* [Misc](misc-1.md)
 
