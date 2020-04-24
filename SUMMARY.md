@@ -60,11 +60,6 @@
 
 * [Listening Skills](soft-skills/listening-skills.md)
 * [Public Speaking](soft-skills/public-speaking.md)
-
-## Misc
-
-* [AdTech 101](misc/adtech-101.md)
-* [Don't Make Me Think](dont-make-me-think.md)
 * [Career](career-1/README.md)
   * [Resume](career-1/resume.md)
   * [Interview](career-1/interview.md)
@@ -81,5 +76,7 @@
   * [Economy / Society](digest-writing-ideas/digest.md)
   * [How to spend your time](digest-writing-ideas/how-to-spend-your-time.md)
   * [Life](digest-writing-ideas/life.md)
-* [Misc](misc-1.md)
+* [Misc](misc/README.md)
+  * [Don't Make Me Think](misc/dont-make-me-think.md)
+  * [AdTech 101](misc/adtech-101.md)
 

@@ -1,6 +1,6 @@
 # Don't Make Me Think
 
-![](.gitbook/assets/dont-make-me-think.jpg)
+![](../.gitbook/assets/dont-make-me-think.jpg)
 
 ## Summary
 
