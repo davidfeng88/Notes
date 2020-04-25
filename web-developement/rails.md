@@ -106,6 +106,8 @@ User.first.microposts
 ...
 ```
 
+![MVC in Rails](../.gitbook/assets/02fig11.jpg)
+
 ## 3. Sample App
 
 ```bash
@@ -120,6 +122,105 @@ rails destroy model User # or use d for short
 rails db:migrate
 rails db:rollback
 rails db:migrate VERSION=0
+# controller and data table is plural. Model is singular
+
+```
+
+### Models
+
+```ruby
+rails generate model User name:string email:string
+
+# rails generates this migration file
+# db/migrate/[timestamp]_create_users.rb
+class CreateUsers < ActiveRecord::Migration[6.0] 
+  def change
+    create_table :users do |t|
+      t.string :name
+      t.string :email
+
+      t.timestamps # creates two magic columns: created_at, updated_at
+    end
+  end
+end
+
+
+## create a user
+
+rails c --sandbox
+Loading development environment in sandbox
+Any modifications you make will be rolled back on exit
+>> User.new
+=> #<User id: nil, name: nil, email: nil, created_at: nil, updated_at: nil>
+>> user = User.new(name: "Michael Hartl", email: "michael@example.com")
+=> #<User id: nil, name: "Michael Hartl", email: "michael@example.com",
+created_at: nil, updated_at: nil>
+>> user.valid?
+true
+>> user.save
+    (0.1ms) SAVEPOINT active_record_1
+  SQL (0.8ms) INSERT INTO "users" ("name", "email", "created_at",
+  "updated_at") VALUES (?, ?, ?, ?) [["name", "Michael Hartl"],
+  ["email", "michael@example.com"], ["created_at", "2019-08-22 01:51:03.453035"],
+  ["updated_at", "2019-08-22 01:51:03.453035"]]
+    (0.1ms) RELEASE SAVEPOINT active_record_1
+=> true
+>> user # now user has id, created_at, updated_at values
+=> #<User id: 1, name: "Michael Hartl", email: "michael@example.com",
+created_at: "2019-08-22 01:51:03", updated_at: "2019-08-22 01:51:03">
+
+# accesss attributes
+>> user.name
+=> "Michael Hartl"
+>> user.email
+=> "michael@example.com"
+>> user.updated_at
+=> Thu, 22 Aug 2019 01:51:03 UTC +00:00
+
+# User.create = User.new + User.save. It returns the created object itself
+>> foo = User.create()
+>> foo.destroy #returns foo. Removes foo from db, but still exist in memory
+
+
+## find a user
+>> User.find(1)
+>> User.find_by(email: "michael@example.com")
+=> #<User id: 1, name: "Michael Hartl", email: "michael@example.com",
+created_at: "2019-08-22 01:51:03", updated_at: "2019-08-22 01:51:03">
+# other methods: User.first, User.all (returns an array)
+
+
+## update a user
+# method 1
+>> user           # Just a reminder about our user's attributes
+=> #<User id: 1, name: "Michael Hartl", email: "michael@example.com",
+created_at: "2019-08-22 01:51:03", updated_at: "2019-08-22 01:51:03">
+>> user.email = "mhartl@example.net"
+=> "mhartl@example.net"
+>> user.save
+=> true
+# remember to save to db. You can reload a user from db.
+>> user.email
+=> "mhartl@example.net"
+>> user.email = "foo@bar.com"
+=> "foo@bar.com"
+>> user.reload.email
+=> "mhartl@example.net"
+
+# method 2
+>> user.update(name: "The Dude", email: "dude@abides.org")
+=> true
+>> user.name
+=> "The Dude"
+>> user.email
+=> "dude@abides.org"
+
+# method 3
+# updates single attribute, skip validation
+>> user.update_attribute(:name, "El Duderino")
+=> true
+>> user.name
+=> "El Duderino"
 ```
 
 ## 4. Rails-flavored Ruby
