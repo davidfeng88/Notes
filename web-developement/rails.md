@@ -110,12 +110,12 @@ User.first.microposts
 
 ```bash
 rails t # run tests
-rails g controller ControllerName <optional action names> # g is short for generate
+rails g controller Users new <new is optional action names> # g is short for generate
 # undo
 rails destroy controller ControllerName <optional action names>
 # generate / destroy models
 rails generate model User name:string email:string
-rails destroy model User
+rails destroy model User # or use d for short
 
 rails db:migrate
 rails db:rollback
@@ -433,8 +433,4 @@ end
 >> require './example_user'     # This is how you load the example_user code.
 => true
 ```
-
-## 5. Filling in the layout
-
-
 
