@@ -157,6 +157,8 @@ Any modifications you make will be rolled back on exit
 created_at: nil, updated_at: nil>
 >> user.valid?
 true
+# once we have validation, save may fail
+# use user.errors.full_messages to see what failed
 >> user.save
     (0.1ms) SAVEPOINT active_record_1
   SQL (0.8ms) INSERT INTO "users" ("name", "email", "created_at",
@@ -221,7 +223,120 @@ created_at: "2019-08-22 01:51:03", updated_at: "2019-08-22 01:51:03">
 => true
 >> user.name
 => "El Duderino"
+
+
+## Validation
+
+#app/models/user.rb
+
+class User < ApplicationRecord
+  # callback
+  # on the right hand side of assignment, self. is optional
+  before_save { self.email = email.downcase }
+  # or before_save { email.downcase! }
+  validates :name,  presence: true, length: { maximum: 50 }
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence: true, length: { maximum: 255 },
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: true
+end
+
+#test/models/user_test.rb
+
+require 'test_helper'
+
+class UserTest < ActiveSupport::TestCase
+
+  def setup
+    @user = User.new(name: "Example User", email: "user@example.com")
+  end
+
+  test "should be valid" do
+    assert @user.valid?
+  end
+  
+  # validate presense
+  test "name should be present" do
+    @user.name = " "
+    assert_not @user.valid?
+  end
+
+  # validate length
+  test "name should not be too long" do
+    @user.name = "a" * 51
+    assert_not @user.valid?
+  end
+
+  test "email should not be too long" do
+    @user.email = "a" * 244 + "@example.com"
+    assert_not @user.valid?
+  end
+  
+  # validate email format
+  test "email validation should accept valid addresses" do
+    valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
+                         first.last@foo.jp alice+bob@baz.cn]
+    valid_addresses.each do |valid_address|
+      @user.email = valid_address
+      assert @user.valid?, "#{valid_address.inspect} should be valid"
+    end
+  end
+
+  test "email validation should reject invalid addresses" do
+    invalid_addresses = %w[user@example,com user_at_foo.org user.name@example.
+                           foo@bar_baz.com foo@bar+baz.com]
+    invalid_addresses.each do |invalid_address|
+      @user.email = invalid_address
+      assert_not @user.valid?, "#{invalid_address.inspect} should be invalid"
+    end
+  end
+  
+  # validate uniqueness
+  test "email addresses should be unique" do
+    duplicate_user = @user.dup
+    @user.save
+    assert_not duplicate_user.valid?
+  end
+  
+  test "email addresses should be saved as lower-case" do
+    mixed_case_email = "Foo@ExAMPle.CoM"
+    @user.email = mixed_case_email
+    @user.save
+    assert_equal mixed_case_email.downcase, @user.reload.email
+  end
+end
+
+# run all tests
+$ rails test:models
 ```
+
+Why we need to enforce database level uniqueness in addition to ActiveRecord uniqueness validation?
+
+1. Alice signs up for the sample app, with address alice@wonderland.com.
+2. Alice accidentally clicks on “Submit” _twice_, sending two requests in quick succession.
+3. The following sequence occurs: request 1 creates a user in memory that passes validation, request 2 does the same, request 1’s user gets saved, request 2’s user gets saved.
+4. Result: two user records with the exact same email address, despite the uniqueness validation
+
+Solution: enforce uniqueness on db level by creating index on the email column, then require that index to be unique.
+
+```ruby
+$ rails generate migration add_index_to_users_email
+# The Rails Way™ is to use migrations every time we 
+# discover that our data model needs to change.
+
+# db/migrate/[timestamp]_add_index_to_users_email.rb
+class AddIndexToUsersEmail < ActiveRecord::Migration[6.0]
+  def change
+    add_index :users, :email, unique: true
+  end
+end
+
+$ rails db:migrate
+```
+
+\(If the migration fails, make sure to exit any running sandbox console sessions, which can lock the database and prevent migrations.\)
+
+Password
 
 ## 4. Rails-flavored Ruby
 
