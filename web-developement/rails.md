@@ -580,6 +580,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    log_out
+    redirect_to root_url
   end
 end
 
@@ -614,6 +616,12 @@ module SessionsHelper
       # use @current_user to cache result
       @current_user ||= User.find_by(id: session[:user_id])
     end
+  end
+  
+  # Logs out the current user.
+  def log_out
+    session.delete(:user_id)
+    @current_user = nil
   end
   
   # Returns true if the user is logged in, false otherwise.
@@ -654,6 +662,22 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     # refer to the user in fixture
     @user = users(:michael)
   end
+```
+
+### Advanced login - remember me
+
+Plan for creating persistent sessions appears as follows:
+
+1. Create a random string of digits for use as a remember token.
+2. Place the token in the browser cookies with an expiration date far in the future.
+3. Save the hash digest of the token to the database.
+4. Place an encrypted version of the user’s id in the browser cookies.
+5. When presented with a cookie containing a persistent user id, find the user in the database using the given id, and verify that the remember token cookie matches the associated hash digest from the database.
+
+5. 当出现包含持久用户 id 的 cookie 时，使用
+
+```ruby
+
 ```
 
 ## 4. Rails-flavored Ruby
@@ -966,5 +990,19 @@ end
 # in irb
 >> require './example_user'     # This is how you load the example_user code.
 => true
+```
+
+### Other cool stuff Rails offer
+
+```ruby
+$ rails console
+>> 1.year.from_now
+=> Wed, 21 Jun 2017 19:36:29 UTC +00:00
+>> 10.weeks.ago
+=> Tue, 12 Apr 2016 19:36:44 UTC +00:00
+>> 1.kilobyte
+=> 1024
+>> 5.megabytes
+=> 5242880
 ```
 
