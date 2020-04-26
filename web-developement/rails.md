@@ -527,7 +527,134 @@ Rails.application.configure do
 end
 ```
 
+### Log in \(sessions\)
 
+```ruby
+$ rails generate controller Sessions new
+
+# config/routes.rb
+
+Rails.application.routes.draw do
+  root 'static_pages#home'
+  get '/help',      to: 'static_pages#help'
+  get '/about',     to: 'static_pages#about'
+  get '/contact',   to: 'static_pages#contact'
+  get '/signup',    to: 'users#new'
+  get '/login',     to: 'sessions#new'
+  post '/login',    to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+  resources :users
+end
+
+# test/controllers/sessions_controller_test.rb
+
+require 'test_helper'
+
+class SessionsControllerTest < ActionDispatch::IntegrationTest
+
+  test "should get new" do
+    get login_path
+    assert_response :success
+  end
+end
+
+# app/controllers/sessions_controller.rb
+
+class SessionsController < ApplicationController
+
+  def new
+  end
+
+  def create
+     user = User.find_by(email: params[:session][:email].downcase)
+     if user && user.authenticate(params[:session][:password])
+     # can by written as user&.method (safe navigation)
+      log_in user
+      redirect_to user # rails turns into user_url(user)
+    else
+      # Create an error message.
+      # re-render the same template, use flash.now
+      flash.now[:danger] = 'Invalid email/password combination'
+      render 'new'
+    end
+  end
+
+  def destroy
+  end
+end
+
+# to see all routes
+rails routes
+
+# app/controllers/application_controller.rb
+
+class ApplicationController < ActionController::Base
+  include SessionsHelper
+end
+
+# app/helpers/sessions_helper.rb
+
+module SessionsHelper
+
+  # Logs in the given user.
+  def log_in(user)
+    # session is a Rails built-in method, which places an
+    # encrypted version of user id as a temprary cookie on
+    # browser. Ohter pages can still retrieve this id.
+    # this cookie expires when the browser is closed.
+    # persistent cookie: use cookies method.
+    session[:user_id] = user.id
+  end
+
+  # Returns the current logged-in user (if any).
+  def current_user
+    if session[:user_id]
+      # use find_by instead of find since when user does not exist
+      # find_by returns nil, but find throws an error
+      # use @current_user to cache result
+      @current_user ||= User.find_by(id: session[:user_id])
+    end
+  end
+  
+  # Returns true if the user is logged in, false otherwise.
+  def logged_in?
+    !current_user.nil?
+    # or use !!
+  end
+end
+
+# test: use fixture: a fake user, not stored in db
+
+# app/models/user.rb
+
+class User < ApplicationRecord
+  ...
+
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+                                                  BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+end
+
+# test/fixtures/users.yml
+
+michael:
+  name: Michael Example
+  email: michael@example.com
+  password_digest: <%= User.digest('password') %>
+  
+# test/integration/users_login_test.rb
+
+require 'test_helper'
+
+class UsersLoginTest < ActionDispatch::IntegrationTest
+
+  def setup
+    # refer to the user in fixture
+    @user = users(:michael)
+  end
+```
 
 ## 4. Rails-flavored Ruby
 
