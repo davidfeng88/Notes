@@ -126,7 +126,7 @@ rails db:migrate VERSION=0
 
 ```
 
-### Models
+### User Model
 
 ```ruby
 rails generate model User name:string email:string
@@ -336,7 +336,198 @@ $ rails db:migrate
 
 \(If the migration fails, make sure to exit any running sandbox console sessions, which can lock the database and prevent migrations.\)
 
-Password
+### Password
+
+```ruby
+class User < ApplicationRecord
+  .
+  .
+  .
+  has_secure_password 
+  # need an attribute called password_digest to work
+  # need bcrypt gem (and bundle install)
+  # has_secure_password's validation allows six spaces as a password
+  validates :password, presence: true, length: { minimum: 6 }
+end
+
+# this line does several things:
+# 1. User can save to password_digest attribute, if User has it.
+# 2. Two virtual attributes (only present in data model, not saved to db)
+# password and password_confirmation, and adds validation that upon user 
+# creation, they should
+# be present and match
+# 3. An authenticate method that returns the user when the password is 
+# correct (and false otherwise)
+
+$ rails generate migration add_password_digest_to_users password_digest:string
+
+# it’s convenient to end the name with to_users, since in this case Rails
+# automatically constructs a migration to add columns to the users table.
+$ rails db:migrate
+
+# in the test
+require 'test_helper'
+
+class UserTest < ActiveSupport::TestCase
+
+  def setup
+    @user = User.new(name: "Example User", email: "user@example.com",
+                     password: "foobar", password_confirmation: "foobar")
+  end
+
+  test "password should be present (nonblank)" do
+    @user.password = @user.password_confirmation = " " * 6
+    assert_not @user.valid?
+  end
+
+  test "password should have a minimum length" do
+    @user.password = @user.password_confirmation = "a" * 5
+    assert_not @user.valid?
+  end
+end
+
+# use rails console to test
+$ rails console
+>> User.create(name: "Michael Hartl", email: "michael@example.com",
+?>             password: "foobar", password_confirmation: "foobar")
+=> #<User id: 1, name: "Michael Hartl", email: "michael@example.com",
+created_at: "2019-08-22 03:15:38", updated_at: "2019-08-22 03:15:38",
+password_digest: [FILTERED]>
+>> user = User.find_by(email: "michael@example.com")
+>> user.password_digest
+=> "$2a$12$WgjER5ovLFjC2hmCItmbTe6nAXzT3bO66GiAQ83Ev03eVp32zyNYG"
+
+>> user.authenticate("not_the_right_password")
+false
+>> user.authenticate("foobaz")
+false
+>> user.authenticate("foobar")
+=> #<User id: 1, name: "Michael Hartl", email: "michael@example.com",
+created_at: "2019-08-22 03:15:38", updated_at: "2019-08-22 03:15:38",
+password_digest: [FILTERED]>
+```
+
+### Sign up
+
+```ruby
+# default env for rails console is development. other two are test, production
+>> Rails.env.development?
+=> true
+
+# load a different env
+$ rails console test
+# or RAILS_ENV=test rails console
+Loading test environment
+>> Rails.env
+=> "test"
+>> Rails.env.test?
+=> true
+
+# same for rails server. by default, it's development
+$ rails server --environment production
+# or RAILS_ENV=production rails server
+
+# db in production env
+$ rails db:migrate RAILS_ENV=production
+
+# Strong params: only allow certain params to be passed in via form
+
+class UsersController < ApplicationController
+  .
+  .
+  .
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      flash[:success] = "Welcome to the Sample App!"
+      # the flash hash is a temp message, which disappears when refresh the page
+      # :success key is the convention for success operation
+      redirect_to @user
+    else
+      render 'new'
+    end
+  end
+  end
+
+  private
+
+    def user_params
+      params.require(:user).permit(:name, :email, :password,
+                                   :password_confirmation)
+    end
+end
+
+# handling errors
+>> user.errors.count
+=> 2
+>> user.errors.empty?
+=> false
+>> user.errors.any?
+=> true
+
+# pluralize is a rails helper function
+>> helper.pluralize(1, "error")
+=> "1 error"
+>> helper.pluralize(5, "error")
+=> "5 errors"
+
+# in the view file we can have
+The form contains <%= pluralize(@user.errors.count, "error") %>.
+
+# test
+$ rails generate integration_test users_signup
+      invoke test_unit
+      create test/integration/users_signup_test.rb
+      
+# test/integration/users_signup_test.rb
+require 'test_helper'
+
+class UsersSignupTest < ActionDispatch::IntegrationTest
+
+  test "invalid signup information" do
+    get signup_path
+    assert_no_difference 'User.count' do
+      post users_path, params: { user: { name: "",
+                        email: "user@invalid",
+                        password:              "foo",
+                        password_confirmation: "bar" } }
+    end
+    assert_template 'users/new'
+  end
+  
+  test "valid signup information" do
+    get signup_path
+    assert_difference 'User.count', 1 do
+      post users_path, params: { user: { name: "Example User",
+                                         email: "user@example.com",
+                                         password:              "password",
+                                         password_confirmation: "password" } }
+    end
+     follow_redirect!
+     assert_template 'users/show'
+  end
+end
+```
+
+### Production-Grad deployment
+
+Force browser to use SSL
+
+```ruby
+Rails.application.configure do
+  .
+  .
+  .
+  # Force all access to the app over SSL, use Strict-Transport-Security,
+  # and use secure cookies.
+  config.force_ssl = true
+  .
+  .
+  .
+end
+```
+
+
 
 ## 4. Rails-flavored Ruby
 
