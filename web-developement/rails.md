@@ -674,11 +674,75 @@ Plan for creating persistent sessions appears as follows:
 4. Place an encrypted version of the user’s id in the browser cookies.
 5. When presented with a cookie containing a persistent user id, find the user in the database using the given id, and verify that the remember token cookie matches the associated hash digest from the database.
 
-5. 当出现包含持久用户 id 的 cookie 时，使用
+### Update, show, and delete users
 
 ```ruby
+# only logged in user can edit/update itself
+# app/controllers/users_controller.rb
 
+class UsersController < ApplicationController
+  # Before filters
+  # Confirms a logged-in user.
+  before_action :correct_user, only: [:edit, :update]
+  ...
+  private
+    def user_params
+      params.require(:user).permit(:name, :email, :password,
+      :password_confirmation)
+    end
+
+    
+    # Confirms the correct user.
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_url) unless current_user?(@user)
+    end
+end
+
+# friendly forwarding:
+# when user want to edit, it requested login.
+# after login, it should go back to the edit page.
+# app/helpers/sessions_helper.rb
+module SessionsHelper
+
+  # Redirects to stored location (or to the default).
+  def redirect_back_or(default)
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
+
+  # Stores the URL trying to be accessed.
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
+end
+
+# db/seeds.rb
+# Create a main sample user.
+User.create!(name: "Example User",
+email: "example@railstutorial.org", password:
+"foobar", password_confirmation: "foobar")
+# Generate a bunch of additional users.
+99.times do |n|
+name = Faker::Name.name
+email = "example-#{n+1}@railstutorial.org" password = "password"
+User.create!(name: name,
+email: email,
+password:
+password, password_confirmation: password)
+end
+
+# if you have a boolean column in db, say admin on user,
+# rails will add a admin? method that returns boolean on user.
+# flip
+user.toggle!(:admin)
 ```
+
+### Microposts
+
+
+
+
 
 ## 4. Rails-flavored Ruby
 
@@ -990,6 +1054,14 @@ end
 # in irb
 >> require './example_user'     # This is how you load the example_user code.
 => true
+
+# metaprogramming
+$ rails console 
+>> a = [1, 2, 3]
+>> a.length
+=> 3
+>> a.send(:length) => 3
+>> a.send("length") => 3
 ```
 
 ### Other cool stuff Rails offer
