@@ -190,6 +190,7 @@ created_at: "2019-08-22 01:51:03", updated_at: "2019-08-22 01:51:03">
 => #<User id: 1, name: "Michael Hartl", email: "michael@example.com",
 created_at: "2019-08-22 01:51:03", updated_at: "2019-08-22 01:51:03">
 # other methods: User.first, User.all (returns an array)
+# take first 6 users: User.order(:created_at).take(6)
 
 
 ## update a user
@@ -732,6 +733,15 @@ password:
 password, password_confirmation: password)
 end
 
+users = User.order(:created_at).take(6)
+50.times do
+  content = Faker::Lorem.sentence(word_count: 5)
+  users.each { |user| user.microposts.create!(content: content) }
+end
+
+$ rails db:migrate:reset
+$ rails db:seed
+
 # if you have a boolean column in db, say admin on user,
 # rails will add a admin? method that returns boolean on user.
 # flip
@@ -740,9 +750,112 @@ user.toggle!(:admin)
 
 ### Microposts
 
+```ruby
+$ rails generate model Micropost content:text user:references
 
+# migration
+class CreateMicroposts < ActiveRecord::Migration[6.0]
+  def change
+    create_table :microposts do |t|
+      t.text :content
+      t.references :user, foreign_key: true
 
+      t.timestamps
+    end
+    add_index :microposts, [:user_id, :created_at] # add this line
+  end
+end
 
+$ rails db:migrate
+
+$ rails test:models # only run modesl test
+```
+
+Once we have user/micropost association \(a user has many microposts\), we have the following methods
+
+![](../.gitbook/assets/13tab01.jpg)
+
+```ruby
+# to make a micropost
+# idiomatic
+user.microposts.create
+user.microposts.create!
+user.microposts.build # does not modify db. returns object in memory
+
+# not so idiomatic
+Micropost.create
+Micropost.create!
+Micropost.new
+
+# app/models/micropost.rb
+class Micropost < ApplicationRecord
+  belongs_to :user
+  default_scope -> { order(created_at: :desc) }
+  validates :user_id, presence: true
+  validates :content, presence: true, length: { maximum: 140 }
+end
+
+# Proc / lambda / anonymous function
+>> -> { puts "foo" }
+=> #<Proc:0x007fab938d0108@(irb):1 (lambda)>
+>> -> { puts "foo" }.call
+foo
+=> nil
+
+# app/models/user.rb
+class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+  # when a user is deleted, delete all his posts also
+  .
+  .
+  .
+end
+```
+
+### Active Storage
+
+```ruby
+$ rails active_storage:install
+$ rails db:migrate
+
+# app/models/micropost.rb
+
+class Micropost < ApplicationRecord
+  belongs_to       :user
+  has_one_attached :image # Add this line
+  default_scope -> { order(created_at: :desc) }
+  validates :user_id, presence: true
+  validates :content, presence: true, length: { maximum: 140 }
+end
+
+# gemfile
+gem 'aws-sdk-s3',       '1.46.0', require: false
+
+# config/storage.yml
+amazon:
+  service: S3
+  access_key_id:     <%= ENV['AWS_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+  region:            <%= ENV['AWS_REGION'] %>
+  bucket:            <%= ENV['AWS_BUCKET'] %>
+  
+# config/environments/production.rb
+
+Rails.application.configure do
+  .
+  .
+  .
+  # Store uploaded files on Amazon AWS.
+  config.active_storage.service = :amazon
+  .
+  .
+  .
+end
+
+$ heroku pg:reset DATABASE
+$ heroku run rails db:migrate
+$ heroku run rails db:seed
+```
 
 ## 4. Rails-flavored Ruby
 
@@ -1072,6 +1185,10 @@ $ rails console
 => Wed, 21 Jun 2017 19:36:29 UTC +00:00
 >> 10.weeks.ago
 => Tue, 12 Apr 2016 19:36:44 UTC +00:00
+>> helper.time_ago_in_words(1.year.ago) # in rails no need to add helper.
+=> "about 1 year"
+>> helper.number_to_human(10000)
+=> "10 Thousand"
 >> 1.kilobyte
 => 1024
 >> 5.megabytes
