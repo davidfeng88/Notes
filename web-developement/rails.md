@@ -857,6 +857,40 @@ $ heroku run rails db:migrate
 $ heroku run rails db:seed
 ```
 
+### User following users
+
+```ruby
+# app/models/user.rb
+
+class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: "Relationship",
+                                  foreign_key: "follower_id",
+                                  dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  .
+  .
+  .
+end
+
+# config/routes.rb
+resources :users do
+  member do
+    get :following, :followers
+  end
+end
+
+# generates /users/1/following and /users/1/followers
+
+resources :users do
+  collection do
+    get :tigers
+  end
+end
+# generates /users/tigers collection does not need id
+
+```
+
 ## 4. Rails-flavored Ruby
 
 ### Strings
