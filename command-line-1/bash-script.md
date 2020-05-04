@@ -90,6 +90,10 @@ diff <(ls foo) <(ls bar)
 # < x
 # ---
 # > y
+
+# Note that in python os.system(cmd) uses sh
+# to use process substitution, do
+# os.system('/bin/bash -c "cmd"')
 ```
 
 ### Comparisons
