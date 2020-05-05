@@ -1045,6 +1045,8 @@ NoMethodError: undefined method `to_a' for 9:Fixnum
 => "Michael"
 >> user                               # A literal representation of the hash
 => {"last_name"=>"Hartl", "first_name"=>"Michael"}
+>> user.last_name
+# throws an error: NoMethodError: undefined method
 >> user[:password]          # Access the value of an undefined key.
 => nil
 
