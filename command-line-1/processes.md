@@ -39,7 +39,6 @@ Can move both files and directories. Can act as renaming. Move multiple files: `
 * `-r` for directory.
 * `-i` for confirmation.
 * wildcards: `*?`. The shell expands the wildcards, not `rm`. `[AB]`: `A` or `B`.
-  * rm \*.txt fails when there are too many files. to get the limit: `gefconf ARG_MAX`
 
 ## Navigation
 
@@ -205,8 +204,6 @@ yes | sudo apt-get install ...
 com1; com2 # will run com2 regardless of result of com1
 com1 && com2 # only run com2 when com1 succeeds
 com1 || echo "Failed" # only run echo when com1 fails
-com1 | com2 # the commands in the pipe runs in parallel 
-# sleep 3 | sleep 5 | echo '8'
 ```
 
 ## Standard Stream

@@ -2,6 +2,8 @@
 
 AWK is a programming language for text processing, usually used in data extraction and reporting. Input file is parsed into multiple records \(by default, one line is one record\), and each record is parsed into multiple fields \(by default, field separator is whitespaces\). Use AWK to parse HTML is generally a bad idea. However, it is common to use AWK to generate HTML.
 
+\(mawk might be faster than awk\)
+
 ## Basic Usages
 
 ```text
