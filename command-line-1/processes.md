@@ -157,8 +157,17 @@ Removes adjacent duplicated lines. Usually used with sort: `sort a.txt | uniq`.
 ```bash
 find . # shows all files and directories
 find . -type d # only show directories. type f is for files
-find . -name '*.txt' # use quotes around txt so that shell does not expand it
+find . -name '*.txt' # use quotes around txt so that shell does not expand it. one line one file.
 wc -l $(find . -name '*.txt') # subshell commands run first. Just like expanding the wildcards.
+```
+
+### xargs
+
+```bash
+find . -type f -name '*.txt' | xargs -n1 -P8 | mawk 'map code here' | mawk 'reduce code here'
+# homemade MapReduce
+# xargs -n1: every time take (at most) 1 line as args
+# -P8: allow 8 commands run at the same time
 ```
 
 ## Other commands
