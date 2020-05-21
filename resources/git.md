@@ -28,7 +28,5 @@ patience diff [https://alfedenzo.livejournal.com/170301.html](https://alfedenzo.
 
 common git commands [https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 
-
-
-
+{% embed url="https://mp.weixin.qq.com/s/d0gxbpMmDfewD3tQfV1ZoQ" %}
 

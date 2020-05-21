@@ -16,4 +16,5 @@ ODC Internal
 
 * [Xandr Industry Reference](https://wiki.xandr.com/display/industry/Welcome)
 * [https://academy.mediamath.com/](https://academy.mediamath.com/)
+* Trade desk [https://edgeacademy.thetradedesk.com/](https://edgeacademy.thetradedesk.com/)
 

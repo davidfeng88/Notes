@@ -121,3 +121,7 @@ DDIA Book Review
 
 {% embed url="https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/" %}
 
+DDIA 中文笔记
+
+{% embed url="https://www.codedump.info/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" %}
+

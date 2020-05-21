@@ -34,5 +34,7 @@ Functional programming
 
 {% embed url="https://codewords.recurse.com/issues/six/this-just-isnt-functional" %}
 
+《Pragmatic Programmer》中文翻译
 
+{% embed url="https://github.com/caicaishmily/pragmatic-programmer-zh" %}
 
