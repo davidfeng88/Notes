@@ -2,6 +2,12 @@
 
 [https://arcentry.com/blog/scaling-webapps-for-newbs-and-non-techies/](https://arcentry.com/blog/scaling-webapps-for-newbs-and-non-techies/)
 
+{% embed url="https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview" %}
+
+{% embed url="https://www.1point3acres.com/bbs/thread-141966-1-1.html" %}
+
+
+
 How we scaled Dropbox [https://www.youtube.com/watch?v=PE4gwstWhmc](https://www.youtube.com/watch?v=PE4gwstWhmc) [https://blogs.dropbox.com/tech/2018/10/dropbox-traffic-infrastructure-edge-network/](https://blogs.dropbox.com/tech/2018/10/dropbox-traffic-infrastructure-edge-network/)
 
 A Brief History of High Availability [https://www.cockroachlabs.com/blog/brief-history-high-availability/](https://www.cockroachlabs.com/blog/brief-history-high-availability/)
