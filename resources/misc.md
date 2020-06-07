@@ -2,8 +2,6 @@
 
 ## Knowledge Organization
 
-{% embed url="https://tkainrad.dev/posts/reading-list-organizing-knowledge/" %}
-
 zsh
 
 {% embed url="https://tkainrad.dev/posts/setting-up-linux-workstation/" %}
