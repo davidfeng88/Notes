@@ -52,6 +52,7 @@
   * [Don't Make Me Think](misc/dont-make-me-think.md)
   * [AdTech 101](misc/adtech-101.md)
 * [Resources](resources/README.md)
+  * [manager](resources/manager.md)
   * [K8s resources](resources/k8s-resources.md)
   * [JavaScript](resources/javascript.md)
   * [Git Resources](resources/git.md)
