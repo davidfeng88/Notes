@@ -2,11 +2,11 @@
 
 ## Knowledge Organization
 
-{% embed url="https://dev.to/brpaz/how-do-i-organize-my-knowledge-as-a-software-engineer-4387" %}
-
 {% embed url="https://tkainrad.dev/posts/reading-list-organizing-knowledge/" %}
 
-{% embed url="https://tkainrad.dev/tags/productivity/" %}
+zsh
+
+{% embed url="https://tkainrad.dev/posts/setting-up-linux-workstation/" %}
 
 
 
