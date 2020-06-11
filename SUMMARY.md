@@ -88,4 +88,5 @@
     * [Open Yale Course - 心理学导论](non-tech/ren-wen/xin-li-xue-dao-lun.md)
     * [Open Yale Course - 现代社会理论基础](non-tech/ren-wen/open-yale-course-xian-dai-she-hui-li-lun-ji-chu.md)
     * [Yale - Coursera - Negotiation](non-tech/ren-wen/yale-coursera-negotiation.md)
+* [Spark](spark.md)
 
