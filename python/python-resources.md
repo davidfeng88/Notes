@@ -5,12 +5,6 @@
 * [Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html#)
 * multiple versions: anaconda
 
-{% embed url="https://learning.oreilly.com/videos/python-programming-language/9780134217314" %}
-
-{% embed url="https://dabeaz-course.github.io/practical-python/Notes/Contents.html" %}
-
-
-
 Books
 
 * Intermediate Python [https://leanpub.com/intermediatepython](https://leanpub.com/intermediatepython)

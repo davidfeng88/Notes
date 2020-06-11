@@ -274,7 +274,9 @@ Use `"$1"`, `"$filename"` to when the variable contains spaces.
 
 ### List all processes
 
-`ps`: list \(your active\) processes. `-f` gives more info.
+`ps`: \(process status\) list \(your active\) processes. `-f` or `-l`gives more info.
+
+`ps aux`: show all processes. \(including other users'\)
 
 * PID: process ID.
 * PPID: parent's ID.
@@ -289,13 +291,15 @@ Use `"$1"`, `"$filename"` to when the variable contains spaces.
 
 | Signal | Effect | How to send |
 | :--- | :--- | :--- |
-| SIGINT | Process kills itself | Ctrl + C |
+| SIGINT | \(interrupt\) Process kills itself | Ctrl + C |
 | SIGKILL \(can't be ignored\) | Kernel kills process | kill -9 |
 
 SIGKILL - process may be killed before it releases its resources, causing some unexpected results.
 
 ```bash
-kill -9 pid # when multiple processes share the same name
+kill PID # send 15/TERM (software termination signal)
+kill PID1 PID2
+kill -9 PID # when multiple processes share the same name
 killall -9 process_name
 ```
 
@@ -317,7 +321,15 @@ background =&gt; foreground: `fg`
 
 * `fg %1` to select to bring which process. The ID is the one shown in `jobs`.
 
-list all jobs: `jobs`
+`jobs`
+
+list all jobs started in the current terminal
+
+`-l` show PID
+
+### Top
+
+list processes
 
 ## History
 
