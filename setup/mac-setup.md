@@ -2,10 +2,17 @@
 
 ## Software Dev
 
-### Command Line Tools for Xcode
-
 ```text
+# Command Line Tools for Xcode
 xcode-select --install
+# iTerms 2 font
+# https://github.com/powerline/fonts
+# VSCode font
+# https://github.com/tonsky/FiraCode
+
+# VS Code
+# download Settings Sync extension
+# shift + alt + d to download settings
 ```
 
 ### Homebrew
