@@ -152,7 +152,7 @@ Removes adjacent duplicated lines. Usually used with sort: `sort a.txt | uniq`.
 
 `grep -i break-in auth.log | awk {'print $12'}` Use awk to print the 12th thing on each line.
 
-## find
+### find
 
 ```bash
 find . # shows all files and directories
@@ -161,6 +161,10 @@ find . -name '*.txt' # use quotes around txt so that shell does not expand it. o
 wc -l $(find . -name '*.txt') # subshell commands run first. Just like expanding the wildcards.
 ```
 
+### dos2unix
+
+convert windows text file to unix text file
+
 ### xargs
 
 ```bash
@@ -168,6 +172,9 @@ find . -type f -name '*.txt' | xargs -n1 -P8 | mawk 'map code here' | mawk 'redu
 # homemade MapReduce
 # xargs -n1: every time take (at most) 1 line as args
 # -P8: allow 8 commands run at the same time
+
+cat commands.txt | xargs -L 1 ffmpeg
+# feed one line to ffmpeg at a time
 ```
 
 ## Other commands

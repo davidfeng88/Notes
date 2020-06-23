@@ -20,6 +20,7 @@
   * [ssh](command-line-1/ssh.md)
   * [gzip](command-line-1/gzip.md)
   * [Command line tools](command-line-1/tools.md)
+  * [ffmpeg](command-line-1/ffmpeg.md)
   * [at and crontab - scheduling commands](command-line-1/scheduling-commands.md)
 * [Web Developement](web-developement/README.md)
   * [Chrome Dev Tools](web-developement/chrome-dev-tools.md)
