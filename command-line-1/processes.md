@@ -384,6 +384,25 @@ fi
 
 $ means that you are not the root user.
 
+## Disk utilities
+
+### df
+
+report file system disk space usage.
+
+* `-h`: human readable size info.
+* `df -h .`: only show the file system containing the current directory.
+
+### du
+
+estimate file space usage.
+
+`du -hd 1 .`: -h for human readable size. -d 1: only go one level deep.
+
+Sort by human readable size: `du -hd 1 . | sort -hr`
+
+Looks like `sort -n` works on Mac.
+
 ## Misc
 
 * `unzip abc.zip`.
