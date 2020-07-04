@@ -41,3 +41,11 @@ _   下划线
 !   感叹号
 ```
 
+Shield
+
+徽章格式 : `[![img_text](img_src)](link_src)`即超链接内部嵌套图片
+
+{% embed url="https://segmentfault.com/a/1190000019552597" %}
+
+{% embed url="https://shields.io/" %}
+
