@@ -1,4 +1,4 @@
-# HTML, CSS
+# HTML
 
 ## Ref
 
@@ -71,6 +71,8 @@ is the same as
 
 Other characters \(not reserved, not legal\) will be encoded to UTF-8 by browser \(汉字\).
 
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/encodeURIComponent" %}
+
 ## Attributes
 
 ```markup
@@ -108,16 +110,120 @@ event handler: values are JavaScript code. Keys:
 
 `onabort, onautocomplete, onautocompleteerror, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextmenu, oncuechange, ondblclick, ondrag, ondragend, ondragenter, ondragexit, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onpause, onplay, onplaying, onprogress, onratechange, onreset, onresize, onscroll, onseeked, onseeking, onselect, onshow, onsort, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, onvolumechange, onwaiting`
 
-## How to center an &lt;img&gt;?
+## HTML character encoding
 
-Method 1: &lt;img&gt; is an `inline` element. We can center it by converting it to a `block` element, then use the `margin: 0 auto;` trick.
-
-```css
-img.center {
-    display: block;
-    margin: 0 auto;
-}
+```markup
+<p>hello</p>
+<!-- 等同于 -->
+<p>&#104;&#101;&#108;&#108;&#111;</p>
+<!-- 等同于 -->
+<p>&#x68;&#x65;&#x6c;&#x6c;&#x6f;</p>
 ```
 
-Method 2: if the parent element is a `block` element \(e.g. &lt;div&gt;\), we can use `text-align: center;` on the parent.
+entity: `&name;`
+
+* `<`：`&lt;`
+* `>`：`&gt;`
+* `"`：`&quot;`
+* `'`：`&apos;`
+* `&`：`&amp;`
+* `©`：`&copy;`
+* `#`：`&num;`
+* `§`：`&sect;`
+* `¥`：`&yen;`
+* `$`：`&dollar;`
+* `£`：`&pound;`
+* `¢`：`&cent;`
+* `%`：`&percnt;`
+* `*`：`$ast;`
+* `@`：`&commat;`
+* `^`：`&Hat;`
+* `±`：`&plusmn;`
+* 空格：`&nbsp;`
+
+## HTML tags
+
+* `<header>`
+* `<footer>`
+* `<main>`
+* `<article>`
+* `<aside>`
+* `<section>`
+* `<nav>`
+* `<h1>` ~ `<h6>`
+* `<hgroup>`
+
+### Text tags
+
+* &lt;br&gt;: for inline elements
+
+```markup
+<pre>hello
+
+   world</pre>
+
+preformatted, keeps spaces and newline
+multiline <code> has to be in <pre>
+<pre>
+<code>
+  let a = 1;
+  console.log(a);
+</code>
+</pre>
+```
+
+* &lt;strong&gt; &lt;b&gt;
+* &lt;em&gt; &lt;i&gt; \(emphasize\)
+* &lt;sub&gt; &lt;sup&gt; &lt;var&gt; \(variable in math formula\)
+* &lt;u&gt; underline &lt;s&gt; strikethrough
+* &lt;blockquote&gt; &lt;cite&gt; &lt;q&gt;
+* `<ins>`标签是一个行内元素，表示原始文档添加（insert）的内容。`<del>`与之类似，表示删除（delete）的内容。它们通常用于展示文档的删改。
+* &lt;small&gt;: no need for CSS.
+* &lt;mark&gt;: for highlight.
+* &lt;ruby&gt; for pinyin [https://wangdoc.com/html/text.html\#ruby](https://wangdoc.com/html/text.html#ruby)
+
+### Table tags
+
+* &lt;ol&gt;: attributes: reversed, start="5", type
+  * `type`属性指定数字编号的样式。目前，浏览器支持以下样式。
+    * `a`：小写字母
+    * `A`：大写字母
+    * `i`：小写罗马数字
+    * `I`：大写罗马数字
+    * `1`：整数（默认值）
+
+```markup
+<ol type="a" start="3">
+  <li>列表项 A</li>
+  <li>列表项 B</li>
+  <li>列表项 C</li>
+</ol>
+```
+
+* &lt;li&gt;: value
+
+```markup
+<ol>
+  <li>列表项 A</li>
+  <li value="4">列表项 B</li>
+  <li>列表项 C</li>
+</ol>
+```
+
+### Image
+
+responsive image [https://wangdoc.com/html/image.html](https://wangdoc.com/html/image.html)
+
+### Link
+
+* &lt;a&gt; can have `mailto:` as href.
+* &lt;link&gt;: rel="stylesheet" relation
+
+### Other tags
+
+* tables [https://wangdoc.com/html/table.html](https://wangdoc.com/html/table.html)
+* Forms [https://wangdoc.com/html/form.html](https://wangdoc.com/html/form.html)
+* New tags
+  * &lt;dialog&gt;: native modal
+  * &lt;details&gt; &lt;summary&gt;
 
