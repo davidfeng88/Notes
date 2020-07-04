@@ -24,7 +24,7 @@
   * [at and crontab - scheduling commands](command-line-1/scheduling-commands.md)
 * [Web Developement](web-developement/README.md)
   * [Chrome Dev Tools](web-developement/chrome-dev-tools.md)
-  * [CSS](web-developement/css.md)
+  * [HTML, CSS](web-developement/css.md)
   * [Rails](web-developement/rails.md)
   * [Hugo](web-developement/hugo.md)
   * [REST APIs](web-developement/rest-apis.md)
