@@ -25,6 +25,7 @@
 * [Web Developement](web-developement/README.md)
   * [Chrome Dev Tools](web-developement/chrome-dev-tools.md)
   * [HTML](web-developement/css.md)
+  * [Markdown](web-developement/markdown.md)
   * [CSS](web-developement/css-1.md)
   * [Rails](web-developement/rails.md)
   * [Hugo](web-developement/hugo.md)
