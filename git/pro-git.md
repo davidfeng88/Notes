@@ -1,8 +1,15 @@
 # Pro Git
 
-![](.gitbook/assets/progit2.png)
+![](../.gitbook/assets/progit2.png)
 
 ## 第一章 起步
+
+```bash
+# check if git is installed
+which git
+
+git --version
+```
 
 ### Git config
 
@@ -14,7 +21,7 @@
 
 ```bash
 # set user name and email
-git config user.name "David Feng"
+git config --system user.name "David Feng"
 git config user.email davidfeng@abc.com
 
 # see the config
@@ -22,9 +29,18 @@ git config --list
 
 # get help
 git help config
+# same as man git-log
+
+# other common configs
+core.editor "vim"
+color.ui true
 ```
 
 **Note**: env variables such as `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME`, `GIT_COMMITTER_EMAIL` will override the user name and email in config.
+
+### Git completion
+
+{% embed url="https://github.com/git/git/tree/master/contrib/completion" %}
 
 ## 第二章 Git基础
 

@@ -1,5 +1,7 @@
 # Design Pattern
 
+{% embed url="https://refactoringguru.cn/design-patterns" %}
+
 Design Pattern [https://github.com/kamranahmedse/design-patterns-for-humans?utm\_source=mybridge&utm\_medium=email&utm\_campaign=read\_more](https://github.com/kamranahmedse/design-patterns-for-humans?utm_source=mybridge&utm_medium=email&utm_campaign=read_more) [http://norvig.com/design-patterns/](http://norvig.com/design-patterns/)
 
 并行编程 The Little Book of Semaphores 信号量小书 中文版 [https://blog.csdn.net/booksyhay/article/details/82692362](https://blog.csdn.net/booksyhay/article/details/82692362)
