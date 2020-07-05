@@ -70,13 +70,10 @@ Remove a file from staging but keep it in working directory
 
 `git rm --cached filename`
 
-\`\`
-
 ### Track empty directory
 
 ```bash
-touch dir/.gitkeep
-
+touch dir/.keep #create an empty file in that dir
 ```
 
 ---- In progress ----
