@@ -89,6 +89,10 @@ Revert a file to previous version \(for both working directory and staging\): gi
 
 Revert a commit: git revert SHA
 
+#### Move file from staging to working directory
+
+git reset HEAD filename
+
 #### Remote Repo
 
 List all of them: git remote  
