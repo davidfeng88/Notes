@@ -82,8 +82,12 @@ only show commits that add/delete a function or variable: git log -S function\_n
 
 #### 撤销操作
 
-replace the previous commit: git commit —amend  
-discard changes for a file: git checkout —filename
+replace the previous commit: git commit --amend  
+discard changes for a file: git checkout -- filename
+
+Revert a file to previous version \(for both working directory and staging\): git checkout SHA -- filename
+
+Revert a commit: git revert SHA
 
 #### Remote Repo
 
