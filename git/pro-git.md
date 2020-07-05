@@ -66,7 +66,18 @@ Remove a file
 Rename a file: method 1: do it in OS, or use `git mv`  
 `git mv file1 file2`: same as three commands - `mv file1 file2; git rm file1; git add file2`
 
+Remove a file from staging but keep it in working directory
 
+`git rm --cached filename`
+
+\`\`
+
+### Track empty directory
+
+```bash
+touch dir/.gitkeep
+
+```
 
 ---- In progress ----
 
@@ -452,7 +463,9 @@ ToDo: 标签引用**
 
 **color.ui=true**
 
-**core.excludesfile=~/.gitignore**
+**core.excludesfile=~/.gitignore \(a user level gitignore file\) to edit:**
+
+`git config --global core.excludesfile=~/.gitignore`
 
 **push.default=simple**
 
