@@ -58,7 +58,12 @@ color.ui true
 
 ### 移除和移动文件
 
-`git rm file`  
+Remove a file
+
+* Method 1: remove it in OS, then git add/rm.
+* Method 2: `git rm file`. It removes the file \(not in trash\) and adds this change to staging.
+
+Rename a file: method 1: do it in OS, or use `git mv`  
 `git mv file1 file2`: same as three commands - `mv file1 file2; git rm file1; git add file2`
 
 
