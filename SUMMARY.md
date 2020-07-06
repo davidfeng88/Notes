@@ -54,6 +54,7 @@
 * [Misc](misc/README.md)
   * [Regex](misc/regex.md)
   * [Don't Make Me Think](misc/dont-make-me-think.md)
+  * [Microsoft Excel](misc/microsoft-excel.md)
   * [AdTech 101](misc/adtech-101.md)
 * [Resources](resources/README.md)
   * [VS Code](resources/vs-code.md)
