@@ -1,10 +1,7 @@
 # VS Code
 
-### Extension
-
-* Spell Checker
-* 
-
+* Download Settings Sync
+* Command Palette =&gt; sync: download settings
 
 ### Useful commands
 
