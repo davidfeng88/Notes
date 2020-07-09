@@ -13,6 +13,7 @@
   * [Mac Setup](setup/mac-setup.md)
 * [Command Line](command-line-1/README.md)
   * [Basics](command-line-1/processes.md)
+  * [Linux basics](command-line-1/linux-basics.md)
   * [Bash script](command-line-1/bash-script.md)
   * [Create temp files](command-line-1/create-temp-files.md)
   * [awk](command-line-1/awk.md)
