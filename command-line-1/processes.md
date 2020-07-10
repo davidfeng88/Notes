@@ -64,7 +64,7 @@ missing:~$ ls -l /home
 drwxr-xr-x 1 missing  users  4096 Jun 15  2019 missing
 ```
 
-d: missing is a directory.
+d: `missing` is a directory.
 
 owner: missing
 
@@ -402,6 +402,40 @@ estimate file space usage.
 Sort by human readable size: `du -hd 1 . | sort -hr`
 
 Looks like `sort -n` works on Mac.
+
+## Sort
+
+`sort -k2 a.txt`
+
+* k: key. Use the second field as the key. But for numbers, 1331 &lt; 21 &lt; 3
+* -n: numeric sort
+* -u: uniq. Remove dupes.
+
+## Tar
+
+Short for tape archive. tar file itself has no compression. tar.gz, .tgz uses gzip compression. tar.bz2 uses bzip compression.
+
+Create a tar: tar cvf myfiles.tar my\_dir/ my\_dir2/
+
+* c: create an archive
+* v: verbose. easier to add index
+* f: output as a file. Otherwise it goes to STDOUT
+
+tar caf myfiles.tar.gz my\_dir/
+
+* a: use compression based on extension
+
+tar xf myfiles.tar.bz2 -C target\_dir/
+
+* x: extract
+* C: directory to change into
+
+## Zip
+
+better compatibility than Tar \(works on PC and Mac\)
+
+* zip -r my\_files.zip my\_dir/
+* unzip my\_files.zip
 
 ## Misc
 

@@ -17,6 +17,7 @@
   * [Bash script](command-line-1/bash-script.md)
   * [Create temp files](command-line-1/create-temp-files.md)
   * [awk](command-line-1/awk.md)
+  * [sed](command-line-1/sed.md)
   * [make](command-line-1/make.md)
   * [ssh](command-line-1/ssh.md)
   * [gzip](command-line-1/gzip.md)
