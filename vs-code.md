@@ -2,6 +2,13 @@
 
 * Download Settings Sync
 * Command Palette =&gt; sync: download settings
+  * upload/download settings: shift + alt + u/d
+* ⌘P will let you navigate to any file or symbol by typing its name
+* ⌃Tab will cycle you through the last set of files opened
+* ⇧⌘O will let you navigate to a specific symbol in a file
+* ⌃G will let you navigate to a specific line in a file
+
+{% embed url="https://www.vscodecandothat.com/" %}
 
 ### Useful commands
 
