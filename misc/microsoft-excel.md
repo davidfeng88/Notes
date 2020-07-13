@@ -35,3 +35,5 @@ Update the pivot table when the original table changes:
 
 * right click, refresh
 
+{% embed url="https://www.youtube.com/watch?v=X6iQzAU1HGA" %}
+

@@ -63,12 +63,4 @@ qlmarkdown: 预览渲染后的markdown文件
 * Screensaver: [https://github.com/JohnCoates/Aerial](https://github.com/JohnCoates/Aerial)
 * PDF process: cpdf
 * Video transcoder: [https://handbrake.fr/](https://handbrake.fr/)
-* Remove app completely: [AppCleaner](https://freemacsoft.net/appcleaner/)
-* homebrew UI: [https://www.cakebrew.com/](https://www.cakebrew.com/)
-* screenshot:
-  * command + shift + 3 \(fullscreen\)
-  * command + shift + 4 \(drag\)
-  * command+ shift + 5 \(drag, new UI\)
-* screen recording: quicktime \(with or without sound\)
-  * show key strokes: [https://github.com/keycastr/keycastr](https://github.com/keycastr/keycastr)
 
