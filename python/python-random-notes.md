@@ -31,22 +31,21 @@ def process_line(line):
 NUM_OF_WORKERS = 8
 
 pool = Pool(NUM_OF_WORKERS)
-with open('sample-url.csv', 'r') as f:
+with open('input.csv', 'r') as input, \
+     open('output.csv', 'w', newline ='') as output:
   headers = [
     'name',
     'age',
   ]
+  writer = DictWriter(output, fieldnames = headers)
+  writer = writeheader()
 
-  with open('output.csv', 'w', newline ='') as output:
-    writer = DictWriter(output, fieldnames = headers)
-    writer = writeheader()
-    
-    s = time.time()
-    # imap returns one result as the worker finishes one task
-    # map returns all results when all tasks are done
-    for result in pool.imap(process_line, f, NUM_OF_WORKERS):
-      writer.writerow(result)
-    e = time.time()
-    rint(f'finished in {e-s} seconds.')
+  s = time.time()
+  # imap returns one result as the worker finishes one task
+  # map returns all results when all tasks are done
+  for result in pool.imap(process_line, input, NUM_OF_WORKERS):
+    writer.writerow(result)
+  e = time.time()
+  rint(f'finished in {e-s} seconds.')
 ```
 
