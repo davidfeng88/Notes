@@ -1,5 +1,11 @@
 # Mac Setup
 
+## No Internal Speaker
+
+reset PRAM - hold option + command + P + R during startup.
+
+{% embed url="https://support.apple.com/en-us/HT204063" %}
+
 ## Software Dev
 
 ```text
