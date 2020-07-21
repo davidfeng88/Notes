@@ -15,4 +15,5 @@ Books
 
 * Intermediate Python [https://leanpub.com/intermediatepython](https://leanpub.com/intermediatepython)
 * Inside The Python Virtual Machine [https://leanpub.com/insidethepythonvirtualmachine](https://leanpub.com/insidethepythonvirtualmachine)
-
+* Effective python [https://learning.oreilly.com/library/view/effective-python-90/9780134854717/](https://learning.oreilly.com/library/view/effective-python-90/9780134854717/)
+* 
