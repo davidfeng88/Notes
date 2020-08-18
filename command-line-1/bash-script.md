@@ -190,6 +190,8 @@ else
 fi
 ```
 
+note that when expression succeeds \(return value is 0\), then clause runs. \(not like JavaScript, hwere 0 is falsey\)
+
 #### while/until
 
 ```bash
