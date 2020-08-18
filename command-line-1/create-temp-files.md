@@ -11,3 +11,5 @@ echo "Our temp file is $TMPFILE"
 
 Ref: [http://www.ruanyifeng.com/blog/2019/12/mktemp.html](http://www.ruanyifeng.com/blog/2019/12/mktemp.html)
 
+[https://wangdoc.com/bash/mktemp.html](https://wangdoc.com/bash/mktemp.html)
+
