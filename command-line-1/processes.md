@@ -283,7 +283,7 @@ Use `"$1"`, `"$filename"` to when the variable contains spaces.
 
 `ps`: \(process status\) list \(your active\) processes. `-f` or `-l`gives more info.
 
-`ps aux`: show all processes. \(including other users'\)
+`ps -aux`: show all processes. \(including other users'\)
 
 * PID: process ID.
 * PPID: parent's ID.
