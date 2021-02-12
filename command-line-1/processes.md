@@ -409,6 +409,7 @@ Looks like `sort -n` works on Mac.
 
 * k: key. Use the second field as the key. But for numbers, 1331 &lt; 21 &lt; 3
 * -n: numeric sort
+* -r: reverse
 * -u: uniq. Remove dupes.
 
 ## Tar
