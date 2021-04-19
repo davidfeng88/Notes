@@ -124,27 +124,5 @@ Nowadays we simply have too much information. One way to handle that is "lazy lo
 
 {% file src=".gitbook/assets/docshare.tips\_cli-git-emacs-dotfiles.pdf" caption="Command Line PDF Ref" %}
 
-### System Design / Distributed System
 
-* [Jeff Dean lecture](http://videolectures.net/wsdm09_dean_cblirs/)
-* [A thorough intro to distributed systems](https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/)
-* [The system design primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
-* [Web architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)
-* [Different ways of caching and maintaining cache consistency](https://blog.the-pans.com/different-ways-of-caching-in-distributed-system/)
-* [缓存与数据库一致性保证](https://yq.aliyun.com/articles/175196)
-
-### Misc
-
-* [Comparing Database Types](https://www.prisma.io/blog/comparison-of-database-models-1iz9u29nwn37)
-* [git flow](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow)
-* [自然语言处理](https://easyai.tech/blog/59pdf-nlp-all-in-one/)
-* Bit hacks \([1](https://graphics.stanford.edu/~seander/bithacks.html), [2](https://catonmat.net/low-level-bit-hacks)\)
-
-### CS Books
-
-* [list 1](https://www.coderscat.com/best-cs-books)
-* [list 2](https://blog.pragmaticengineer.com/my-reading-list/)
-* [teach yourself CS](https://teachyourselfcs.com/) \([cn](https://github.com/keithnull/TeachYourselfCS-CN)\)
-
-Configure iTerms2.
 
