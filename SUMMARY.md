@@ -60,7 +60,6 @@
   * [AdTech 101](misc/adtech-101.md)
 * [Resources](resources/README.md)
   * [VS Code](resources/vs-code.md)
-  * [manager](resources/manager.md)
   * [K8s resources](resources/k8s-resources.md)
   * [JavaScript](resources/javascript.md)
   * [Git Resources](resources/git.md)
