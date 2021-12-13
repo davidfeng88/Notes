@@ -38,7 +38,7 @@ is the same as
 <p>hello world</p>
 ```
 
-### &lt;meta&gt;
+### \<meta>
 
 ```markup
 <meta charset="utf-8">
@@ -47,7 +47,7 @@ is the same as
 
 ## URL Intro
 
-18 characters are reserved: they can only appear at certain places in URL. If those characters are used elsewhere in URL, they need to be escaped \(`%` + ASCII code\). Encoding other characters are not recommended.
+18 characters are reserved: they can only appear at certain places in URL. If those characters are used elsewhere in URL, they need to be escaped (`%` + ASCII code). Encoding other characters are not recommended.
 
 * `space`：%20
 * `!`：%21
@@ -69,9 +69,9 @@ is the same as
 * `[`：%5B
 * `]`：%5D
 
-Other characters \(not reserved, not legal\) will be encoded to UTF-8 by browser \(汉字\).
+Other characters (not reserved, not legal) will be encoded to UTF-8 by browser (汉字).
 
-{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/encodeURIComponent" %}
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent" %}
 
 ## Attributes
 
@@ -150,12 +150,12 @@ entity: `&name;`
 * `<aside>`
 * `<section>`
 * `<nav>`
-* `<h1>` ~ `<h6>`
+* `<h1>` \~ `<h6>`
 * `<hgroup>`
 
 ### Text tags
 
-* &lt;br&gt;: for inline elements
+* \<br>: for inline elements
 
 ```markup
 <pre>hello
@@ -172,19 +172,19 @@ multiline <code> has to be in <pre>
 </pre>
 ```
 
-* &lt;strong&gt; &lt;b&gt;
-* &lt;em&gt; &lt;i&gt; \(emphasize\)
-* &lt;sub&gt; &lt;sup&gt; &lt;var&gt; \(variable in math formula\)
-* &lt;u&gt; underline &lt;s&gt; strikethrough
-* &lt;blockquote&gt; &lt;cite&gt; &lt;q&gt;
+* \<strong> \<b>
+* \<em> \<i> (emphasize)
+* \<sub> \<sup> \<var> (variable in math formula)
+* \<u> underline \<s> strikethrough
+* \<blockquote> \<cite> \<q>
 * `<ins>`标签是一个行内元素，表示原始文档添加（insert）的内容。`<del>`与之类似，表示删除（delete）的内容。它们通常用于展示文档的删改。
-* &lt;small&gt;: no need for CSS.
-* &lt;mark&gt;: for highlight.
-* &lt;ruby&gt; for pinyin [https://wangdoc.com/html/text.html\#ruby](https://wangdoc.com/html/text.html#ruby)
+* \<small>: no need for CSS.
+* \<mark>: for highlight.
+* \<ruby> for pinyin [https://wangdoc.com/html/text.html#ruby](https://wangdoc.com/html/text.html#ruby)
 
 ### Table tags
 
-* &lt;ol&gt;: attributes: reversed, start="5", type
+* \<ol>: attributes: reversed, start="5", type
   * `type`属性指定数字编号的样式。目前，浏览器支持以下样式。
     * `a`：小写字母
     * `A`：大写字母
@@ -200,7 +200,7 @@ multiline <code> has to be in <pre>
 </ol>
 ```
 
-* &lt;li&gt;: value
+* \<li>: value
 
 ```markup
 <ol>
@@ -216,14 +216,13 @@ responsive image [https://wangdoc.com/html/image.html](https://wangdoc.com/html/
 
 ### Link
 
-* &lt;a&gt; can have `mailto:` as href.
-* &lt;link&gt;: rel="stylesheet" relation
+* \<a> can have `mailto:` as href.
+* \<link>: rel="stylesheet" relation
 
 ### Other tags
 
 * tables [https://wangdoc.com/html/table.html](https://wangdoc.com/html/table.html)
 * Forms [https://wangdoc.com/html/form.html](https://wangdoc.com/html/form.html)
 * New tags
-  * &lt;dialog&gt;: native modal
-  * &lt;details&gt; &lt;summary&gt;
-
+  * \<dialog>: native modal
+  * \<details> \<summary>

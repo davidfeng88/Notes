@@ -67,7 +67,7 @@ PEP 8
 
 Google python guide
 
-{% embed url="https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python\_language\_rules/\#" %}
+{% embed url="https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_language_rules/#" %}
 
 注意事项
 
@@ -106,7 +106,7 @@ thread, multiprocessing, asyncio 几个包里都会发现一系列的工具：
 
 {% embed url="https://blog.laisky.com/p/concurrency-lock/" %}
 
-{% embed url="https://blog.laisky.com/p/os-process/\#%E6%95%8F%E6%84%9F%E5%8C%BA%E9%97%AE%E9%A2%98" %}
+{% embed url="https://blog.laisky.com/p/os-process/#%E6%95%8F%E6%84%9F%E5%8C%BA%E9%97%AE%E9%A2%98" %}
 
 资源用量
 
@@ -257,7 +257,7 @@ if __name__ == "__main__":
 * 内存对齐
 * zero copy（mmap、sendfile）
 
-此外，“静态化”是一种提高程序可读性和可维护性的重要手段，比如在函数定义时指明 type-hints，写清楚参数和返回值的类型。 以及对于 OOP，也可以写出定义明确的的“接口-实现”型代码，比如按照 `abc` -&gt; `BaseClass` -&gt; `Class` -&gt; `Instance` 的形式进行定义，就会规范很多。
+此外，“静态化”是一种提高程序可读性和可维护性的重要手段，比如在函数定义时指明 type-hints，写清楚参数和返回值的类型。 以及对于 OOP，也可以写出定义明确的的“接口-实现”型代码，比如按照 `abc` -> `BaseClass` -> `Class` -> `Instance` 的形式进行定义，就会规范很多。
 
 ```python
 from abc import ABC, abstractmethod, abstractproperty
@@ -317,4 +317,3 @@ r = Robin()  # 会报错，因为没有实现抽象方法
 
 # TypeError: Can't instantiate abstract class Robin with abstract methods eat, fly
 ```
-

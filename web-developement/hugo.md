@@ -2,36 +2,36 @@
 
 ## Quick Reference
 
-| Task | Command |
-| :--- | :--- |
-| Create a new single page | `hugo new posts/a/index.md` |
-| Local preview at `localhost: 1313` | `hugo server` \(`-D` to include drafts\) |
-| Update all submodules | `git pull --recurse-submodules` |
+| Task                               | Command                                |
+| ---------------------------------- | -------------------------------------- |
+| Create a new single page           | `hugo new posts/a/index.md`            |
+| Local preview at `localhost: 1313` | `hugo server` (`-D` to include drafts) |
+| Update all submodules              | `git pull --recurse-submodules`        |
 
 ## Basics
 
 ### Common commands
 
-| Task | Command |
-| :--- | :--- |
-| Install Hugo via brew | `brew install hugo` |
+| Task                          | Command                        |
+| ----------------------------- | ------------------------------ |
+| Install Hugo via brew         | `brew install hugo`            |
 | Verify that Hugo is installed | `which hugo` or `hugo version` |
-| Create a new site | `hugo new site davidfeng.us` |
+| Create a new site             | `hugo new site davidfeng.us`   |
 
 ### Use a theme
 
-1. Select a theme from [Hugo Themes](https://themes.gohugo.io/).
+1. Select a theme from [Hugo Themes](https://themes.gohugo.io).
 2. Download the theme as a git submodule: `git submodule add https://github.com/Track3/hermit.git themes/hermit`
 3. Copy `themes/hermit/exampleSite/config.toml` to the top level.
 
 ### Customize a theme
 
-To customize a theme, e.g. you want to make some changes to a `config.toml`, an archetype, a template/layout, or a static file \(favicon\), either change the theme directly \(in the `themes/hermit` directory\), or copy the file you want to change to the same location on the top level and change it. Hugo will prioritize the files on the top level.
+To customize a theme, e.g. you want to make some changes to a `config.toml`, an archetype, a template/layout, or a static file (favicon), either change the theme directly (in the `themes/hermit` directory), or copy the file you want to change to the same location on the top level and change it. Hugo will prioritize the files on the top level.
 
 * In `config.toml`, I changed the following fields: baseURL, title, googleAnalytics, disqusShortname, author name, homeSubtitle, justifyContent, social icons' names and urls, menu items. Usually Hugo server needs to be restarted after modification of `config.toml`.
 * In `archetypes`, I removed image, toc, tags, comments fields in the front matter.
 * I created `layouts/shortcodes/pen.html` and copied a shortcode for codepen from [here](https://github.com/jorinvo/hugo-shortcodes/blob/master/shortcodes/pen.html).
-* I generated favicon files [here](https://realfavicongenerator.net/) and put them under `static/`.
+* I generated favicon files [here](https://realfavicongenerator.net) and put them under `static/`.
 
 ### Create content
 
@@ -39,15 +39,15 @@ Content lives in `content/` directory. There are two type of pages in Hugo: list
 
 #### Single pages
 
-| Markdown file | Command to generate | URL |
-| :--- | :--- | :--- |
-| `content/a.md` | `hugo new a.md` | `localhost:1313/a/` |
-| `content/a/index.md` | `hugo new a/index.md` | `localhost:1313/a/` |
+| Markdown file            | Command to generate       | URL                           |
+| ------------------------ | ------------------------- | ----------------------------- |
+| `content/a.md`           | `hugo new a.md`           | `localhost:1313/a/`           |
+| `content/a/index.md`     | `hugo new a/index.md`     | `localhost:1313/a/`           |
 | `content/dir1/dir2/b.md` | `hugo new dir1/dir2/b.md` | `localhost:1313/dir1/dir2/b/` |
 
 The `hugo new path/file` command populates the markdown file according to the archetypes.
 
-I usually use an index.md page as my single page so that I can put related assets \(e.g. images\) in the same directory.
+I usually use an index.md page as my single page so that I can put related assets (e.g. images) in the same directory.
 
 #### List pages
 
@@ -126,7 +126,7 @@ Custom variables:
 
 ### [Hugo Variables](https://gohugo.io/variables/)
 
-Only available in templates \(`layouts/`\), not available in `content/`.
+Only available in templates (`layouts/`), not available in `content/`.
 
 General form: `{{ .Title }}`. Common variables: `.Date`, `.URL`, `.Content`.
 
@@ -195,13 +195,13 @@ The `archetypes/dir1.md` file applies to new files created by `hugo new dir1/new
 
 ### Shortcodes
 
-We can embed resources from other websites \(e.g. YouTube\) using shortcodes without writing a long iframe HTML code. For example, to embed a YouTube video at [https://www.youtube.com/watch?v=2xkNJL4gJ9E](https://www.youtube.com/watch?v=2xkNJL4gJ9E), All I need to do is to add `{{</* youtube 2xkNJL4gJ9E */>}}` in the markdown file. Hugo will expand that "shortcode" into the iframe HTML code. 
+We can embed resources from other websites (e.g. YouTube) using shortcodes without writing a long iframe HTML code. For example, to embed a YouTube video at [https://www.youtube.com/watch?v=2xkNJL4gJ9E](https://www.youtube.com/watch?v=2xkNJL4gJ9E), All I need to do is to add `{{</* youtube 2xkNJL4gJ9E */>}}` in the markdown file. Hugo will expand that "shortcode" into the iframe HTML code.&#x20;
 
 Hugo has built-in shortcodes for Twitter, Instagram, YouTube, Vimeo, etc. See [the official doc](https://gohugo.io/content-management/shortcodes/) for more.
 
 #### [Custom shortcode / shortcode template](https://gohugo.io/templates/shortcode-templates/)
 
-Another way of thinking shortcodes is to treat them as functions \(in the context of programming\). The general form of shortcode is:
+Another way of thinking shortcodes is to treat them as functions (in the context of programming). The general form of shortcode is:
 
 ```markup
 {{</* my-shortcode params */>}}
@@ -213,9 +213,9 @@ which is basically just
 myFunc(params)
 ```
 
-To use the custom shortcode \(call the function\) in the markdown files in `content/`, we need to add a shortcode template in `layouts/shortcodes/shortcode-name.html` \(define the function\).
+To use the custom shortcode (call the function) in the markdown files in `content/`, we need to add a shortcode template in `layouts/shortcodes/shortcode-name.html` (define the function).
 
-In the markdown file, a shortcode can take in positional \(e.g. `{{</* youtube 2xkNJL4gJ9E */>}}`\) or named parameters \(e.g. `{{</* img src="a.png" */>}}`\).
+In the markdown file, a shortcode can take in positional (e.g. `{{</* youtube 2xkNJL4gJ9E */>}}`) or named parameters (e.g. `{{</* img src="a.png" */>}}`).
 
 In the template, use `{{.Get 0}}` or `{{.Get "src"}}` to get the passed in values.
 
@@ -239,7 +239,7 @@ In the markdown file, call it as follows:
 
 In the template, access the text between the opening and closing tags via `{{.Inner}}`.
 
-If the inner text needs further markdown processing \(e.g. `**bold**`\), call the shortcode with % % instead of &lt; &gt;:
+If the inner text needs further markdown processing (e.g. `**bold**`), call the shortcode with % % instead of < >:
 
 ```markup
 {{%/* my-shortcode */%}}
@@ -251,13 +251,13 @@ If the inner text needs further markdown processing \(e.g. `**bold**`\), call th
 
 Pages in `content/` can be grouped by taxonomies. The default two taxonomies are tags and categories. In `config.toml`, add the following lines:
 
-```text
+```
 [taxonomies]
   tag = "tags"
   category = "categories"
 ```
 
-To disable category, use `category = ""`. To add a custom taxomony \(e.g. mood\), add `mood = "moods"`.
+To disable category, use `category = ""`. To add a custom taxomony (e.g. mood), add `mood = "moods"`.
 
 In content markdown files, the front matters can contain taxonomy information:
 
@@ -280,5 +280,4 @@ In the single page, `tag1` links to `localhost:1313/tags/tag1/`, which is a list
 
 ## Recommended Resources
 
-* [Giraffe Academy Hugo Tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3)
-
+* [Giraffe Academy Hugo Tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo\&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3)

@@ -16,7 +16,7 @@
 
 国家财政吃紧，从富人收不上税（利益集团游说减税），压力主要在中产。无法投资教育，底层只能“快乐教育“。
 
-{% embed url="https://mp.weixin.qq.com/s?\_\_biz=MzUzMjY0NDY4Ng==&mid=2247485956&idx=1&sn=9e1b806a493dba391bc850d39fd3f312&chksm=fab15c25cdc6d5331b56c5a366286c076ffdab55d954657e5787eb6013879d2fcebe3b543d1a&scene=21\#wechat\_redirect" %}
+{% embed url="https://mp.weixin.qq.com/s?__biz=MzUzMjY0NDY4Ng==&mid=2247485956&idx=1&sn=9e1b806a493dba391bc850d39fd3f312&chksm=fab15c25cdc6d5331b56c5a366286c076ffdab55d954657e5787eb6013879d2fcebe3b543d1a&scene=21#wechat_redirect" %}
 
 普通人买房贷款，首付一般是30%，也就是3倍多杠杆，这可能已经是绝大多数人一生中能用到的最高的杠杆率了，如果通过信用卡套现，倒是也可以凑到十倍以上杠杆，但是大部分人并不敢这么玩，因为啥我们一会说。这也是大佬和普通人之间最重要的一个差别。
 
@@ -36,16 +36,15 @@
 
 华尔街种类繁多的金融衍生品是美国金融强大的根源。强大的金融让美国市场能充分利用每一分钱的价值，让美国企业的融资难度变得很低，在美国创业，中小企业不仅融资难度比较低，融资利率也比较低。但是，金融衍生品越丰富，金融市场越发达，财富也会快速向上层流去，我们上文一直在说这事。可能国家能做的，只能是加强监管，防止洗劫发生。
 
-{% embed url="https://mp.weixin.qq.com/s?\_\_biz=MzUzMjY0NDY4Ng==&mid=2247486851&idx=1&sn=e63a5e4c79fefd3e89e2f83401fe51ec&chksm=fab15ba2cdc6d2b483f865aac7659169dea26c52851dad76b26dbf1d47fecd7b267b2c37571a&scene=21\#wechat\_redirect" %}
+{% embed url="https://mp.weixin.qq.com/s?__biz=MzUzMjY0NDY4Ng==&mid=2247486851&idx=1&sn=e63a5e4c79fefd3e89e2f83401fe51ec&chksm=fab15ba2cdc6d2b483f865aac7659169dea26c52851dad76b26dbf1d47fecd7b267b2c37571a&scene=21#wechat_redirect" %}
 
-1. 减税。
+1.  减税。
 
-   1. 扩大再生产，雇佣更多员工，赚更多的钱？**消费是不足的，产能是过剩的**。
-   2. 那老板会给员工把这笔钱分了吗？提高人民收入，增加购买力？当然不会了，今年减税涨工资，明年不减税了，工资怎么办？减工资？当然不行了，工资这玩意只能涨，一般不能降。
-   3. 有钱花在刀刃上，多出点钱来就应该做点立竿见影的事，啥事呢？**回购股票**。
+    1. 扩大再生产，雇佣更多员工，赚更多的钱？**消费是不足的，产能是过剩的**。
+    2. 那老板会给员工把这笔钱分了吗？提高人民收入，增加购买力？当然不会了，今年减税涨工资，明年不减税了，工资怎么办？减工资？当然不行了，工资这玩意只能涨，一般不能降。
+    3. 有钱花在刀刃上，多出点钱来就应该做点立竿见影的事，啥事呢？**回购股票**。
 
-   股票少了，可不就股价会上升？而且股票少了以后，每股的分红也会变多，这样投资人会更喜欢这只股票，大家追涨杀跌，股市一涨再涨。
-
+    股票少了，可不就股价会上升？而且股票少了以后，每股的分红也会变多，这样投资人会更喜欢这只股票，大家追涨杀跌，股市一涨再涨。
 2. 美联储要加息。奥巴马时期已经长期低息了。但川总不同意，对股市经济打击太大。按理说老川应该是要去杠杆的，不过老川不但不接受这个结果，反而继续加杠杆。
 
 {% embed url="https://www.youtube.com/watch?v=PHe0bXAIuk0" %}
@@ -53,20 +52,20 @@
 Three main forces that drive the economy:
 
 * Productivity growth
-* Short term debt cycle \(5-8 years\)
-* Long term debt cycle \(75-100 years\)
+* Short term debt cycle (5-8 years)
+* Long term debt cycle (75-100 years)
 
 Transaction: buyer uses money/credit to exchange goods/service/financial assets.
 
-Any two entities \(lender and borrower\) can create credit out of thin air. As credit is created, debt is created as the same time. It's an asset for the lender, liability for the borrower. When the borrower pays back, the transaction is settled.
+Any two entities (lender and borrower) can create credit out of thin air. As credit is created, debt is created as the same time. It's an asset for the lender, liability for the borrower. When the borrower pays back, the transaction is settled.
 
-Increased income =&gt; increased borrowing \(interest is low\) =&gt; increased spending =&gt; other people's increased income
+Increased income => increased borrowing (interest is low) => increased spending => other people's increased income
 
 Cycles: consume more than we can afford when we acquire debt, and spend less when we have to pay it back.
 
 debt cycle: When you use credit, some time in the future you have to pay it back.
 
-Short term cycle: expansion \(credit is easily available =&gt; increase spending\) =&gt; inflation =&gt; central bank increases interest rate, so fewer people can borrow money =&gt; less credit =&gt; spending decreases =&gt; deflation \(prices go down\) =&gt; recession =&gt; central bank lowers interest rate =&gt; expansion
+Short term cycle: expansion (credit is easily available => increase spending) => inflation => central bank increases interest rate, so fewer people can borrow money => less credit => spending decreases => deflation (prices go down) => recession => central bank lowers interest rate => expansion
 
 But, if you compare each cycle, the debt is still going up overall, which leads to the long term debt cycle. 2008 - deleveraging. This is worse than a recession because interest rate is already low. What do we do now?
 
@@ -75,22 +74,22 @@ But, if you compare each cycle, the debt is still going up overall, which leads 
 * wealth redistribution
 * print money
   * First three is painful and deflationary. This one is inflationary and stimulative.
-  * Drives up assets price. Central bank prints money, buys government bond, \(lends money to government\). Government spend money on goods and services.
+  * Drives up assets price. Central bank prints money, buys government bond, (lends money to government). Government spend money on goods and services.
 * Policy makers need to balance the deflationary methods and the inflationary method. If done well, it's a beautiful deleveraging.
   * if the new printed money offsets the falling credit, there won't be inflation.
-  * The income \(spending\) increase must grow faster than the debt \(debt has interest\)
+  * The income (spending) increase must grow faster than the debt (debt has interest)
 
 Takeaway:
 
 * Don't let debt grow faster than income.
-* Don't have income grow faster than productivity. \(you'll become uncompetitive\) &lt;= **writing idea.**
-* **Do all that you can to grow your productivity, because in the long run, that's what matters the most. &lt;= change industry.**
+* Don't have income grow faster than productivity. (you'll become uncompetitive) <= **writing idea.**
+* **Do all that you can to grow your productivity, because in the long run, that's what matters the most. <= change industry.**
 
 {% embed url="https://www.youtube.com/watch?v=WEDIj9JBTC8" %}
 
 If an outside investor invests $500 for 1/3 of the company, the company is worth $1500, and $1000 is **goodwill**.
 
-EBIT \(earnings before interest and taxes\) = revenue - cost of goods \(COGS\) - depreciation of fixed assets - labor
+EBIT (earnings before interest and taxes) = revenue - cost of goods (COGS) - depreciation of fixed assets - labor
 
 Margin = EBIT/revenue
 
@@ -114,8 +113,7 @@ A good money manager:
 
 * Can easily explain investment strategy
 * Has a good reputation
-* Has value approach \(vs. technical approach\)
+* Has value approach (vs. technical approach)
 * Has a successful track record of at least 5 years
 * Has a consistent approach
 * Invests own money in the fund
-
