@@ -1,8 +1,6 @@
 # Table of contents
 
 * [Notes](README.md)
-* [Programming](programming/README.md)
-  * [Programming - Best Practices](programming/programming-best-practices.md)
 * [JavaScript](javascript-1/README.md)
   * [URL processing](javascript-1/url-processing.md)
   * [Numbers](javascript-1/numbers.md)
@@ -60,7 +58,6 @@
   * [AdTech 101](misc/adtech-101.md)
 * [Resources](resources/README.md)
   * [VS Code](resources/vs-code.md)
-  * [Git Resources](resources/git.md)
   * [web](resources/web.md)
   * [misc](resources/misc.md)
   * [AdTech](resources/adtech.md)
