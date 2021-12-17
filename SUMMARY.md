@@ -60,8 +60,6 @@
   * [VS Code](resources/vs-code.md)
   * [web](resources/web.md)
   * [misc](resources/misc.md)
-  * [AdTech](resources/adtech.md)
-  * [Unix](resources/unix.md)
   * [Vim](resources/vim.md)
   * [Tools](resources/tools.md)
   * [System Design](resources/system-design.md)
